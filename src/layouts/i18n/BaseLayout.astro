@@ -1,0 +1,22 @@
+---
+// Layout para páginas con i18n que evita duplicación
+import MainLayout from '../BaseLayout.astro';
+import { useTranslations } from '../../i18n/utils';
+
+interface Props {
+  title?: string | undefined;
+  description?: string | undefined;
+}
+
+const { title, description } = Astro.props;
+const currentLocale = Astro.currentLocale || 'es';
+const t = useTranslations(currentLocale as 'es' | 'en');
+
+// Exponer t a los componentes hijos a través de Astro.locals
+Astro.locals.t = t;
+Astro.locals.lang = currentLocale;
+---
+
+<MainLayout title={title} description={description}>
+  <slot />
+</MainLayout> 

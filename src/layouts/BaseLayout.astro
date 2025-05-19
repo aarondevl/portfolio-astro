@@ -13,9 +13,10 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+const currentLocale = Astro.currentLocale || 'es';
 ---
 
-<html lang="en">
+<html lang={currentLocale}>
 	<head>
 		<MainHead title={title} description={description} />
 	</head>
@@ -27,7 +28,7 @@ const { title, description } = Astro.props;
 		</div>
 
 		<script>
-			// Add “loaded” class once the document has completely loaded.
+			// Add "loaded" class once the document has completely loaded.
 			addEventListener('load', () => document.documentElement.classList.add('loaded'));
 		</script>
 

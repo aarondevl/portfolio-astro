@@ -1,0 +1,61 @@
+---
+import { languages, getLanguageFromURL } from '../i18n/utils';
+
+// Obtener datos de la página actual
+const url = Astro.url;
+const currentLocale = Astro.currentLocale || getLanguageFromURL(url);
+const pathname = url.pathname;
+
+// Extraer la ruta actual sin el prefijo de idioma
+const currentPath = pathname.split('/').slice(2).join('/');
+---
+
+<div class="language-selector">
+  <select onchange="window.location.href = this.value">
+    {Object.entries(languages).map(([language, locale]) => {
+      // Construir la ruta para el idioma seleccionado
+      const localePath = `/${locale}/${currentPath}`;
+      return (
+        <option value={localePath} selected={currentLocale === locale}>
+          {language}
+        </option>
+      )
+    })}
+  </select>
+  <div class="selector-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </div>
+</div>
+
+<style>
+  .language-selector {
+    position: relative;
+    display: inline-block;
+  }
+
+  select {
+    appearance: none;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--gray-999);
+    color: var(--gray-200);
+    border: 1px solid var(--gray-800);
+    cursor: pointer;
+    font-size: var(--text-sm);
+  }
+
+  select:hover {
+    background-color: var(--gray-800);
+  }
+
+  .selector-icon {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--gray-300);
+  }
+</style> 

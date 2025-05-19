@@ -1,14 +1,24 @@
 ---
 import CallToAction from './CallToAction.astro';
 import Icon from './Icon.astro';
+import { useTranslationsFromAstro } from '../i18n/utils';
+
+// Usar la función simplificada para obtener traducciones
+const t = useTranslationsFromAstro(Astro);
 ---
 
 <aside>
-	<h2>Interested in working together?</h2>
-	<CallToAction href="mailto:me@example.com">
-		Send Me a Message
-		<Icon icon="paper-plane-tilt" size="1.2em" />
-	</CallToAction>
+	<h2>{t('cta.work')}</h2>
+	<div class="actions">
+		<CallToAction href="mailto:aaron.ccenta@gmail.com">
+			{t('cta.contact')}
+			<Icon icon="paper-plane-tilt" size="1.2em" />
+		</CallToAction>
+		<CallToAction href="/assets/Profile.pdf" download>
+			{t('cta.download')}
+			<Icon icon="file-download" size="1.2em" />
+		</CallToAction>
+	</div>
 </aside>
 
 <style>
@@ -30,17 +40,32 @@ import Icon from './Icon.astro';
 		max-width: 15ch;
 	}
 
+	.actions {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		width: 100%;
+		max-width: 22rem;
+	}
+
 	@media (min-width: 50em) {
 		aside {
 			padding: 7.5rem;
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: space-between;
+			align-items: center;
 		}
 
 		h2 {
 			font-size: var(--text-3xl);
 			text-align: left;
+		}
+
+		.actions {
+			flex-direction: row;
+			justify-content: flex-end;
+			max-width: none;
 		}
 	}
 </style>

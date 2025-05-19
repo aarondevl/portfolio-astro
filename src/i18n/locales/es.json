@@ -1,0 +1,122 @@
+{
+  "site": {
+    "title": "Aaron Ccenta | Desarrollador Full Stack",
+    "description": "Portafolio de Aaron Ccenta, Desarrollador Full Stack especializado en Node.js, Angular y NestJS"
+  },
+  "nav": {
+    "home": "Inicio",
+    "work": "Proyectos",
+    "about": "Sobre Mí"
+  },
+  "hero": {
+    "greeting": "Hola, mi nombre es Aaron Ccenta",
+    "tagline": "Desarrollador Full Stack especializado en Node, Angular, NestJS y TypeScript, basado en Perú.",
+    "role": {
+      "fullstack": "Full Stack",
+      "node": "Node.js",
+      "angular": "Angular"
+    }
+  },
+  "skills": {
+    "fullstack": {
+      "title": "Desarrollador Full Stack",
+      "description": "Experto en Nest.JS, Angular, Node, PHP, JavaScript y varias bases de datos con más de 4 años de experiencia."
+    },
+    "integration": {
+      "title": "Integración de Sistemas",
+      "description": "Implementé integraciones B2B y migré sistemas legacy a arquitecturas modernas con una mejora del 40% en rendimiento."
+    },
+    "techlead": {
+      "title": "Líder Técnico",
+      "description": "Lideré el desarrollo de sistemas internos de gestión y coordiné el departamento de TI durante la ausencia del coordinador."
+    }
+  },
+  "index": {
+    "selectedWork": {
+      "title": "Proyectos Destacados",
+      "description": "Echa un vistazo a algunos de mis trabajos destacados para clientes en los últimos años."
+    },
+    "mentions": {
+      "title": "Menciones",
+      "description": "He tenido la fortuna de recibir reconocimiento por mi trabajo en varias publicaciones. Echa un vistazo para conocer más."
+    },
+    "viewAll": "Ver Todos"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "tagline": "Gracias por pasar por aquí. A continuación, puedes conocer más sobre mi experiencia y trayectoria.",
+    "background": {
+      "title": "Trayectoria",
+      "p1": "Desarrollador Full Stack con más de 4 años de experiencia, especializado en desarrollo y optimización de sistemas. Me apasiona aprovechar nuevas tecnologías para resolver problemas complejos y mejorar el rendimiento del software.",
+      "p2": "Mi experiencia incluye Nest.JS, Angular, Node, CodeIgniter, PHP, JavaScript y varios sistemas de bases de datos. He migrado exitosamente sistemas legacy a arquitecturas modernas, implementado integraciones B2B y desarrollado aplicaciones SaaS para evaluaciones de candidatos y tests psicométricos.",
+      "p3": "He liderado el diseño e implementación de sistemas integrales de gestión interna, mejorando la eficiencia operativa. También he coordinado departamentos de TI durante transiciones de liderazgo, asegurando la continuidad y estabilidad."
+    },
+    "education": {
+      "title": "Educación",
+      "degree": "Universidad Nacional San Luis Gonzaga de Ica - Ingeniería de Sistemas (2017-2022)"
+    },
+    "skills": {
+      "title": "Habilidades",
+      "categories": [
+        {
+          "title": "Frontend",
+          "skills": "Angular, TypeScript, JavaScript, HTML5, CSS3, Bootstrap"
+        },
+        {
+          "title": "Backend",
+          "skills": "Node.js, NestJS, PHP, CodeIgniter, Express"
+        },
+        {
+          "title": "Bases de datos",
+          "skills": "PostgreSQL, MySQL, MongoDB"
+        },
+        {
+          "title": "Herramientas",
+          "skills": "Git, Docker, AWS, Jira, Confluence"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experiencia",
+      "jobs": [
+        {
+          "title": "Desarrollador Full Stack Sr",
+          "company": "Grupo ATE",
+          "period": "2022 - Presente",
+          "responsibilities": [
+            "Migración de sistemas legado a arquitecturas modernas con mejora del 40% en rendimiento.",
+            "Desarrollo e implementación de integraciones B2B.",
+            "Coordinación del departamento de TI durante transiciones de liderazgo."
+          ]
+        },
+        {
+          "title": "Desarrollador Full Stack",
+          "company": "Globant",
+          "period": "2020 - 2022",
+          "responsibilities": [
+            "Desarrollo de aplicaciones SaaS para evaluaciones de candidatos.",
+            "Implementación de soluciones para pruebas psicométricas.",
+            "Mantenimiento y optimización de sistemas existentes."
+          ]
+        }
+      ]
+    }
+  },
+  "work": {
+    "title": "Mis Proyectos",
+    "description": "Explora los proyectos más recientes de Aaron Ccenta",
+    "tagline": "Estos son algunos proyectos destacados en los que he trabajado recientemente."
+  },
+  "cta": {
+    "work": "¿Interesado en trabajar juntos?",
+    "contact": "Envíame un Mensaje",
+    "download": "Descargar CV"
+  },
+  "error": {
+    "404": {
+      "title": "Página no encontrada",
+      "message": "Lo sentimos, no pudimos encontrar la página que buscas.",
+      "backHome": "Volver al inicio"
+    }
+  }
+} 

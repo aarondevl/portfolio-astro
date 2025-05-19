@@ -5,18 +5,18 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="About | Aaron Ccenta" description="About Aaron Ccenta - Full Stack Developer">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
 				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+				tagline="Thanks for stopping by. Read below to learn more about my background and experience."
 			>
 				<img
 					width="1553"
 					height="873"
 					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
+					alt="Aaron Ccenta at work"
 				/>
 			</Hero>
 
@@ -24,35 +24,71 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+						Full Stack Developer with over 4 years of experience, specializing in developing and optimizing 
+						software systems. I'm passionate about leveraging new technologies to solve complex problems and 
+						improve software performance.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
+						My expertise includes Nest.JS, Angular, Node, CodeIgniter, PHP, JavaScript, and various 
+						database systems. I've successfully migrated legacy systems to modern architectures, 
+						implemented B2B integrations, and developed SaaS applications for candidate evaluations 
+						and psychometric tests.
 					</p>
 					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						I've led the design and implementation of comprehensive internal management systems, improving 
+						operational efficiency. I've also coordinated IT departments during leadership transitions, 
+						ensuring continuity and stability.
 					</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<p>UTP Universidad Tecnológica del Perú - Software Engineering (2022-2025)</p>
+					<p>Platzi - Web Application Development (2023)</p>
+					<p>SENATI - Software Development Technician (2018-2021)</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Experience</h2>
+				<div class="content">
+					<h3>MultiTest Resources SAC (2022-Present)</h3>
+					<p>Software Analyst</p>
+					<ul>
+						<li>Implemented B2B integration to improve interoperability with key business partners</li>
+						<li>Developed profile-based reporting systems to optimize visualization and compatibility calculation</li>
+						<li>Optimized critical system queries for improved response times</li>
+						<li>Led PHP to Node.js migration, separating frontend/backend into NEST and Angular</li>
+					</ul>
+					
+					<h3>VISUAL IMPACT (2020-2022)</h3>
+					<p>Programming Analyst</p>
+					<ul>
+						<li>Developed and maintained SQL databases with CodeIgniter for server-side logic</li>
+						<li>Implemented Microsoft Power BI solutions for data-driven decision making</li>
+						<li>Optimized SQL query performance, reducing response times by 40%</li>
+						<li>Developed two new systems and maintained four existing ones for internal processes</li>
+					</ul>
+					
+					<h3>JHARDSYSTEX (2019-2020)</h3>
+					<p>Software Developer</p>
+					<ul>
+						<li>Developed frontend components with Vue.js</li>
+						<li>Implemented responsive designs with HTML5 and CSS3</li>
+						<li>Provided technical support and documentation</li>
+					</ul>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<ul>
+						<li>Frontend: Angular, Vue.js, TypeScript, JavaScript, HTML5, CSS3, Material UI</li>
+						<li>Backend: Node.js, NestJS, PHP, CodeIgniter, RESTful APIs</li>
+						<li>Database: SQL, various database systems</li>
+						<li>Integration: B2B integration, API development</li>
+						<li>Other: Docker, System architecture, Performance optimization</li>
+					</ul>
 				</div>
 			</section>
 		</main>
@@ -100,6 +136,19 @@ import Hero from '../components/Hero.astro';
 	.content :global(a:hover),
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
+	}
+
+	.content h3 {
+		color: var(--gray-0);
+		font-size: var(--text-lg);
+		margin-top: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.content ul {
+		list-style-type: disc;
+		margin-left: 1.5rem;
+		margin-top: 0.5rem;
 	}
 
 	@media (min-width: 50em) {

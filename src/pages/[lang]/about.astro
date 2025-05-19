@@ -1,0 +1,213 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslationsFromAstro } from '../../i18n/utils';
+
+import ContactCTA from '../../components/ContactCTA.astro';
+import Hero from '../../components/Hero.astro';
+
+// Obtener parámetros de la ruta
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+// Extraer el parámetro de idioma para uso en rutas
+const { lang } = Astro.params;
+
+// Usar la función simplificada para obtener traducciones
+const t = useTranslationsFromAstro(Astro);
+
+// Título y descripción de la página
+const pageTitle = `${t('about.title')} | Aaron Ccenta`;
+const pageDescription = t('site.description');
+
+// Datos específicos por idioma
+const educationText = lang === 'es' 
+  ? "Universidad Nacional San Luis Gonzaga de Ica - Ingeniería de Sistemas (2017-2022)"
+  : "Universidad Nacional San Luis Gonzaga de Ica - Systems Engineering (2017-2022)";
+
+const skillCategories = [
+  {
+    title: lang === 'es' ? 'Frontend' : 'Frontend',
+    skills: 'Angular, TypeScript, JavaScript, HTML5, CSS3, Bootstrap'
+  },
+  {
+    title: lang === 'es' ? 'Backend' : 'Backend',
+    skills: 'Node.js, NestJS, PHP, CodeIgniter, Express'
+  },
+  {
+    title: lang === 'es' ? 'Bases de datos' : 'Databases',
+    skills: 'PostgreSQL, MySQL, MongoDB'
+  },
+  {
+    title: lang === 'es' ? 'Herramientas' : 'Tools',
+    skills: 'Git, Docker, AWS, Jira, Confluence'
+  }
+];
+
+const experience = [
+  {
+    title: lang === 'es' ? 'Desarrollador Full Stack Sr' : 'Sr. Full Stack Developer',
+    company: 'Grupo ATE',
+    period: lang === 'es' ? '2022 - Presente' : '2022 - Present',
+    responsibilities: lang === 'es' 
+      ? [
+        'Migración de sistemas legado a arquitecturas modernas con mejora del 40% en rendimiento.',
+        'Desarrollo e implementación de integraciones B2B.',
+        'Coordinación del departamento de TI durante transiciones de liderazgo.'
+      ]
+      : [
+        'Migrated legacy systems to modern architectures with 40% performance improvement.',
+        'Developed and implemented B2B integrations.',
+        'Coordinated IT department during leadership transitions.'
+      ]
+  },
+  {
+    title: lang === 'es' ? 'Desarrollador Full Stack' : 'Full Stack Developer',
+    company: 'Globant',
+    period: '2020 - 2022',
+    responsibilities: lang === 'es'
+      ? [
+        'Desarrollo de aplicaciones SaaS para evaluaciones de candidatos.',
+        'Implementación de soluciones para pruebas psicométricas.',
+        'Mantenimiento y optimización de sistemas existentes.'
+      ]
+      : [
+        'Developed SaaS applications for candidate evaluations.',
+        'Implemented solutions for psychometric tests.',
+        'Maintained and optimized existing systems.'
+      ]
+  }
+];
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title={t('about.title')}
+        tagline={t('about.tagline')}
+      >
+        <img
+          width="1553"
+          height="873"
+          src="/assets/at-work.jpg"
+          alt="Aaron Ccenta at work"
+        />
+      </Hero>
+
+      <section>
+        <h2 class="section-title">{t('about.background.title')}</h2>
+        <div class="content">
+          <p>
+            {t('about.background.p1')}
+          </p>
+          <p>
+            {t('about.background.p2')}
+          </p>
+          <p>
+            {t('about.background.p3')}
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">{t('about.education.title')}</h2>
+        <div class="content">
+          <p>{t('about.education.degree')}</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">{t('about.skills.title')}</h2>
+        <div class="content">
+          <p><strong>Frontend:</strong> Angular, TypeScript, JavaScript, HTML5, CSS3, Bootstrap</p>
+          <p><strong>Backend:</strong> Node.js, NestJS, PHP, CodeIgniter, Express</p>
+          <p><strong>{lang === 'es' ? 'Bases de datos' : 'Databases'}:</strong> PostgreSQL, MySQL, MongoDB</p>
+          <p><strong>{lang === 'es' ? 'Herramientas' : 'Tools'}:</strong> Git, Docker, AWS, Jira, Confluence</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">{t('about.experience.title')}</h2>
+        <div class="content">
+          <p>
+            <strong>{lang === 'es' ? 'Desarrollador Full Stack Sr' : 'Sr. Full Stack Developer'}</strong> | Grupo ATE ({lang === 'es' ? '2022 - Presente' : '2022 - Present'})
+          </p>
+          <ul>
+            <li>{t('about.experience.jobs.0.responsibilities.0')}</li>
+            <li>{t('about.experience.jobs.0.responsibilities.1')}</li>
+            <li>{t('about.experience.jobs.0.responsibilities.2')}</li>
+          </ul>
+          <p>
+            <strong>{lang === 'es' ? 'Desarrollador Full Stack' : 'Full Stack Developer'}</strong> | Globant (2020 - 2022)
+          </p>
+          <ul>
+            <li>{t('about.experience.jobs.1.responsibilities.0')}</li>
+            <li>{t('about.experience.jobs.1.responsibilities.1')}</li>
+            <li>{t('about.experience.jobs.1.responsibilities.2')}</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(*) {
+      grid-column: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
+</style> 

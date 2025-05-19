@@ -2,22 +2,20 @@
 import Icon from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import type { iconPaths } from './IconPaths';
+import LanguagePicker from './LanguagePicker.astro';
+import { useTranslationsFromAstro } from '../i18n/utils';
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
-	{ label: 'Home', href: '/' },
-	{ label: 'Work', href: '/work/' },
-	{ label: 'About', href: '/about/' },
+	{ label: 'nav.home', href: '/' },
+	{ label: 'nav.work', href: '/work/' },
+	{ label: 'nav.about', href: '/about/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
-	{ label: 'Twitter', href: 'https://twitter.com/me', icon: 'twitter-logo' },
-	{ label: 'Twitch', href: 'https://twitch.tv/me', icon: 'twitch-logo' },
-	{ label: 'GitHub', href: 'https://github.com/me', icon: 'github-logo' },
-	{ label: 'CodePen', href: 'https://codepen.io/me', icon: 'codepen-logo' },
-	{ label: 'dribbble', href: 'https://dribbble.com/me', icon: 'dribbble-logo' },
-	{ label: 'YouTube', href: 'https://www.youtube.com/@me/', icon: 'youtube-logo' },
+	{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/aaronccenta', icon: 'linkedin-logo' },
+	{ label: 'GitHub', href: 'https://github.com/aarondevl', icon: 'github-logo' },
 ];
 
 /** Test if a link is pointing to the current page. */
@@ -27,13 +25,17 @@ const isCurrentPage = (href: string) => {
 	if (pathname.at(-1) !== '/') pathname += '/';
 	return pathname === href || (href !== '/' && pathname.startsWith(href));
 };
+
+// Obtener el idioma actual de forma consistente
+const currentLocale = Astro.currentLocale || 'es';
+const t = useTranslationsFromAstro(Astro);
 ---
 
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
 			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
-			Jeanine White
+			Aaron Ccenta
 		</a>
 		<menu-button>
 			<template>
@@ -49,8 +51,8 @@ const isCurrentPage = (href: string) => {
 			{
 				textLinks.map(({ label, href }) => (
 					<li>
-						<a aria-current={isCurrentPage(href) ? 'page' : null} class="link" href={href}>
-							{label}
+						<a aria-current={isCurrentPage(href) ? 'page' : null} class="link" href={`/${currentLocale}${href}`}>
+							{t(label as any)}
 						</a>
 					</li>
 				))
@@ -76,8 +78,8 @@ const isCurrentPage = (href: string) => {
 			{
 				textLinks.map(({ label, href }) => (
 					<li>
-						<a aria-current={isCurrentPage(href) ? 'page' : null} class="link" href={href}>
-							{label}
+						<a aria-current={isCurrentPage(href) ? 'page' : null} class="link" href={`/${currentLocale}${href}`}>
+							{t(label as any)}
 						</a>
 					</li>
 				))
@@ -97,6 +99,10 @@ const isCurrentPage = (href: string) => {
 
 			<div class="theme-toggle">
 				<ThemeToggle />
+			</div>
+			
+			<div class="language-toggle">
+				<LanguagePicker />
 			</div>
 		</div>
 	</div>
@@ -221,7 +227,7 @@ const isCurrentPage = (href: string) => {
 		text-decoration: none;
 	}
 
-	.link[aria-current] {
+	.link.active {
 		color: var(--gray-0);
 	}
 
@@ -262,6 +268,13 @@ const isCurrentPage = (href: string) => {
 		display: flex;
 		align-items: center;
 		height: calc(var(--icon-size) + 2 * var(--icon-padding));
+	}
+
+	.language-toggle {
+		display: flex;
+		align-items: center;
+		height: calc(var(--icon-size) + 2 * var(--icon-padding));
+		margin-left: 0.75rem;
 	}
 
 	@media (min-width: 50em) {
@@ -319,7 +332,7 @@ const isCurrentPage = (href: string) => {
 			background-color: var(--accent-subtle-overlay);
 		}
 
-		.link[aria-current='page'] {
+		.link.active {
 			color: var(--accent-text-over);
 			background-color: var(--accent-regular);
 		}
@@ -347,7 +360,7 @@ const isCurrentPage = (href: string) => {
 		}
 	}
 	@media (forced-colors: active) {
-		.link[aria-current='page'] {
+		.link.active {
 			color: SelectedItem;
 		}
 	}

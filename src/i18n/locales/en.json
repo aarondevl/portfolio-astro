@@ -1,0 +1,122 @@
+{
+  "site": {
+    "title": "Aaron Ccenta | Full Stack Developer",
+    "description": "Portfolio of Aaron Ccenta, Full Stack Developer specializing in Node.js, Angular, and NestJS"
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "about": "About"
+  },
+  "hero": {
+    "greeting": "Hello, my name is Aaron Ccenta",
+    "tagline": "Full Stack Developer specializing in Node, Angular, NestJS, and TypeScript, based in Peru.",
+    "role": {
+      "fullstack": "Full Stack",
+      "node": "Node.js",
+      "angular": "Angular"
+    }
+  },
+  "skills": {
+    "fullstack": {
+      "title": "Full Stack Developer",
+      "description": "Expert in Nest.JS, Angular, Node, PHP, JavaScript and various databases with 4+ years of experience."
+    },
+    "integration": {
+      "title": "System Integration",
+      "description": "Implemented B2B integrations and migrated legacy systems to modern architectures with 40% performance improvement."
+    },
+    "techlead": {
+      "title": "Tech Leader",
+      "description": "Led development of internal management systems and coordinated IT department during coordinator absence."
+    }
+  },
+  "index": {
+    "selectedWork": {
+      "title": "Selected Work",
+      "description": "Take a look below at some of my featured work for clients from the past few years."
+    },
+    "mentions": {
+      "title": "Mentions",
+      "description": "I have been fortunate enough to receive praise for my work in several publications. Take a look below to learn more."
+    },
+    "viewAll": "View All"
+  },
+  "about": {
+    "title": "About",
+    "tagline": "Thanks for stopping by. Read below to learn more about my background and experience.",
+    "background": {
+      "title": "Background",
+      "p1": "Full Stack Developer with over 4 years of experience, specializing in developing and optimizing software systems. I'm passionate about leveraging new technologies to solve complex problems and improve software performance.",
+      "p2": "My expertise includes Nest.JS, Angular, Node, CodeIgniter, PHP, JavaScript, and various database systems. I've successfully migrated legacy systems to modern architectures, implemented B2B integrations, and developed SaaS applications for candidate evaluations and psychometric tests.",
+      "p3": "I've led the design and implementation of comprehensive internal management systems, improving operational efficiency. I've also coordinated IT departments during leadership transitions, ensuring continuity and stability."
+    },
+    "education": {
+      "title": "Education",
+      "degree": "Universidad Nacional San Luis Gonzaga de Ica - Systems Engineering (2017-2022)"
+    },
+    "skills": {
+      "title": "Skills",
+      "categories": [
+        {
+          "title": "Frontend",
+          "skills": "Angular, TypeScript, JavaScript, HTML5, CSS3, Bootstrap"
+        },
+        {
+          "title": "Backend",
+          "skills": "Node.js, NestJS, PHP, CodeIgniter, Express"
+        },
+        {
+          "title": "Databases",
+          "skills": "PostgreSQL, MySQL, MongoDB"
+        },
+        {
+          "title": "Tools",
+          "skills": "Git, Docker, AWS, Jira, Confluence"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "jobs": [
+        {
+          "title": "Sr. Full Stack Developer",
+          "company": "Grupo ATE",
+          "period": "2022 - Present",
+          "responsibilities": [
+            "Migrated legacy systems to modern architectures with 40% performance improvement.",
+            "Developed and implemented B2B integrations.",
+            "Coordinated IT department during leadership transitions."
+          ]
+        },
+        {
+          "title": "Full Stack Developer",
+          "company": "Globant",
+          "period": "2020 - 2022",
+          "responsibilities": [
+            "Developed SaaS applications for candidate evaluations.",
+            "Implemented solutions for psychometric tests.",
+            "Maintained and optimized existing systems."
+          ]
+        }
+      ]
+    }
+  },
+  "work": {
+    "title": "My Work",
+    "description": "Learn about Aaron Ccenta's most recent projects",
+    "tagline": "See my featured projects below to get an idea of my past experience."
+  },
+  "cta": {
+    "work": "Interested in working together?",
+    "contact": "Send Me a Message",
+    "download": "Download CV"
+  },
+  "error": {
+    "404": {
+      "title": "Page Not Found",
+      "message": "Sorry, we couldn't find the page you're looking for.",
+      "backHome": "Back to Home"
+    }
+  }
+} 

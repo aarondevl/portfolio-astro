@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslationsFromAstro } from '../../i18n/utils';
+import Hero from '../../components/Hero.astro';
+
+// Generate pages for each language
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+// Get translations
+const t = useTranslationsFromAstro(Astro);
+
+// Page title and message from translations
+const title = t('error.404.title');
+const tagline = t('error.404.message');
+const homeLink = t('error.404.backHome');
+
+// Get the current language
+const { lang } = Astro.params;
+---
+
+<BaseLayout title={title} description={tagline}>
+  <div class="container">
+    <Hero title={title} tagline={tagline} />
+    <div class="action">
+      <a href={`/${lang}/`} class="back-home">{homeLink}</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .container {
+    display: grid;
+    place-items: center;
+    min-height: 70vh;
+    text-align: center;
+    margin: 2rem;
+  }
+
+  .action {
+    margin-top: 2rem;
+  }
+
+  .back-home {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-regular);
+    color: var(--accent-text-over);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+
+  .back-home:hover,
+  .back-home:focus {
+    background-color: var(--accent-dark);
+  }
+</style> 
