@@ -1,0 +1,52 @@
+---
+interface Props {
+  tags: string[];
+}
+
+const { tags } = Astro.props;
+
+// Mapeo de tags a colores para visualización
+const tagColors: Record<string, string> = {
+  // Backend
+  'NestJS': 'bg-red-100 text-red-800',
+  'Node.js': 'bg-green-100 text-green-800',
+  'PHP': 'bg-purple-100 text-purple-800',
+  'CodeIgniter': 'bg-orange-100 text-orange-800',
+
+  // Frontend
+  'Angular': 'bg-red-100 text-red-800',
+  'SvelteKit': 'bg-orange-100 text-orange-800',
+
+  // Database
+  'MySQL': 'bg-blue-100 text-blue-800',
+  'SQL Optimization': 'bg-blue-100 text-blue-800',
+
+  // DevOps & Cloud
+  'Docker': 'bg-blue-100 text-blue-800',
+  'AWS': 'bg-yellow-100 text-yellow-800',
+  'Cloudflare': 'bg-orange-100 text-orange-800',
+
+  // Skills
+  'Payments': 'bg-green-100 text-green-800',
+  'B2B Integration': 'bg-purple-100 text-purple-800',
+  'Migration': 'bg-indigo-100 text-indigo-800',
+  'Architecture': 'bg-pink-100 text-pink-800',
+  'Leadership': 'bg-yellow-100 text-yellow-800',
+  'Git': 'bg-gray-100 text-gray-800',
+  'ISO 27001': 'bg-red-100 text-red-800',
+  'Freelance': 'bg-teal-100 text-teal-800',
+  'Order Management': 'bg-blue-100 text-blue-800',
+};
+---
+
+<div class="flex flex-wrap gap-2 mt-2">
+  {tags.map((tag) => (
+    <span class={`px-2 py-1 text-xs font-medium rounded ${tagColors[tag] || 'bg-gray-100 text-gray-800'}`}>
+      {tag}
+    </span>
+  ))}
+</div>
+
+<style>
+  /* Estilos adicionales si son necesarios */
+</style>

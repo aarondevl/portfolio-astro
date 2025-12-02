@@ -1,0 +1,26 @@
+```
+Multitest Resources S.A.C
+Experiencia Oct 2022 - presente( nov 2025)
+Le di mantenimiento a sistemas legacy con Codeigniter 3 - Smartevaluation( gestion de candidatos y procesos de seleccion mediante toma de pruebas psicometricas, es el principal o mas comercial) Opportunities(plataforma donde los candidatos toman sus pruebas psicometricas, Admin(plataforma donde se gestionan los clientes de Multitest) Apps(Inicialmente con codeigniter 3, luego se migro a Angular y Nest; sistema donde se maneja el aacceso al ecosistema de aplicaciones de Multitest).
+
+Desarrolle desde cero un sistema ligero replica del sistema principal Smartevaluation (smartlite.multitestresources.com) que da la posibilidad a los usuarios de pagar por el uso, con pagos directos por candidato evaluado.
+
+Desarrolle en conjunto con el area de TI un sistema de bolsa de trabajo para company y candidatos, una aplicacion adicional para el ecosistema de multitest.
+
+Desarrolle diversas integraciones:
+- implemente las pasarelas de pago Culqi y Mercadopago unificados en un mismo servicio donde se establecio la posibilidad de agregar mas pasarelas en el futuro. 
+- Impemente la integracion con un sistema de facturacion Nubefact para la generacion de facturas y Boletas.
+Nota: La implementacion de estos servicios de pago y facturacion mejoraron notablemente el flujo de compra y venta de multitest, ademas de que se desarrollo un dashboard con metricas clave y detalles necesarios para un analisis completo del flujo de ingresos, facturas y boletas generadas.
+
+- Implemente una integracion con un ATS, TeamTailor, donde nosotros nos incluiamos a su sistema para que nuestros clientes y los de teamtailor tengan la posibilidad de usar las evaluaciones de multitest desde su sistema
+
+Desarrolle un nuevo algoritmo para el manejo, calculo y analisis de compatibilidad de un candidato con un perfil creado por nuestros clientes y usado en su proceso de seleccion, esta mejora permitio que nuestros clientes puedan mejorar la precision de seleccion de candidatos en un 50%
+Trabaje en la creacion de reportes PDF para este nuevo algoritmo.
+
+Desarrolle multiples funcionalidades que mejoraban o daban un valor agregado a lo que ya existia en MT:
+- Mejore la forma en que se descargaban reportes de manera masiva en el sistema principal, antes se generaban multiples pestanias(1 por reporte) lo cual era poco eficiente. La solucion planteada fue descargar un archivo comprimido donde se tuvieran todos los reportes de todos los candidatos seleccionados, esto se ejecutaria en background. Este cambio mejoro la experiencia de usuario notablemente ya que les permitia seguir usando la plataforma mientras se procesaba su descarga masiva.
+
+- Mejore el desarrollo existente acerca del uso de la webcam en videoentrevistas, Aplicando el uso de una libreria mas moderna y con soporte para IOS(antes no se tenia), 
+
+- Mejore el codigo existente para la generacion de diversos reportes, optimizando su rendimiento en un 70%, usando buenas practicas en bucles y manejo de queries( gracias a mi experiencia previa en visual impac(
+```

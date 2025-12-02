@@ -1,0 +1,7 @@
+Turno - Sistema web para la gestion de pedidos
+
+Mayo 2022 - Agosto 2022
+
+- Este proyecto fue por fuera no mi trabajo principal en este periodo ( Visual impact)
+- Participe en el desarrollo de Turno.macctec, desarollo los modulos para la gestion de pedidos y seguimiento del mismo
+(de este no tengo capturas)

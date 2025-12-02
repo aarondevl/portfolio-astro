@@ -10,25 +10,25 @@
   },
   "hero": {
     "greeting": "Hola, mi nombre es Aaron Ccenta",
-    "tagline": "Desarrollador Full Stack especializado en Node, Angular, NestJS y TypeScript, basado en Perú.",
+    "tagline": "Desarrollador Full Stack con 5+ años de experiencia, especializado en NestJS, Docker, Cloud Infrastructure y sistemas de evaluación psicométrica, basado en Perú.",
     "role": {
       "fullstack": "Full Stack",
-      "node": "Node.js",
-      "angular": "Angular"
+      "node": "NestJS & Node.js",
+      "angular": "DevOps & Cloud"
     }
   },
   "skills": {
     "fullstack": {
-      "title": "Desarrollador Full Stack",
-      "description": "Experto en Nest.JS, Angular, Node, PHP, JavaScript y varias bases de datos con más de 4 años de experiencia."
+      "title": "Arquitectura Backend Moderna",
+      "description": "Especializado en NestJS con TypeScript, MikroORM, JWT authentication, y arquitecturas modulares escalables. 5+ años diseñando sistemas robustos y escalables."
     },
     "integration": {
-      "title": "Integración de Sistemas",
-      "description": "Implementé integraciones B2B y migré sistemas legacy a arquitecturas modernas con una mejora del 40% en rendimiento."
+      "title": "DevOps & Cloud Infrastructure",
+      "description": "Experto en Docker, Docker Compose, Cloudflare Tunnels, y despliegue en AWS (AppRunner, Amplify). Automatización de workflows con n8n y migración de sistemas legacy."
     },
     "techlead": {
-      "title": "Líder Técnico",
-      "description": "Lideré el desarrollo de sistemas internos de gestión y coordiné el departamento de TI durante la ausencia del coordinador."
+      "title": "Sistemas Empresariales",
+      "description": "Desarrollo de sistemas psicométricos, gestión interna, inventarios y facturación. Migración de PHP/CodeIgniter a arquitecturas modernas con mejoras de 40% en rendimiento."
     }
   },
   "index": {
@@ -47,32 +47,40 @@
     "tagline": "Gracias por pasar por aquí. A continuación, puedes conocer más sobre mi experiencia y trayectoria.",
     "background": {
       "title": "Trayectoria",
-      "p1": "Desarrollador Full Stack con más de 4 años de experiencia, especializado en desarrollo y optimización de sistemas. Me apasiona aprovechar nuevas tecnologías para resolver problemas complejos y mejorar el rendimiento del software.",
-      "p2": "Mi experiencia incluye Nest.JS, Angular, Node, CodeIgniter, PHP, JavaScript y varios sistemas de bases de datos. He migrado exitosamente sistemas legacy a arquitecturas modernas, implementado integraciones B2B y desarrollado aplicaciones SaaS para evaluaciones de candidatos y tests psicométricos.",
-      "p3": "He liderado el diseño e implementación de sistemas integrales de gestión interna, mejorando la eficiencia operativa. También he coordinado departamentos de TI durante transiciones de liderazgo, asegurando la continuidad y estabilidad."
+      "p1": "Desarrollador Full Stack con 5+ años de experiencia en empresas tecnológicas peruanas. Comenzando en Visual Impact (2020-2022) desarrollando sistemas de gestión interna, y actualmente en Multitest Resources S.A.C. (2022-presente) especializándome en sistemas psicométricos y job boards.",
+      "p2": "Mi stack técnico incluye NestJS, TypeScript, Angular, SvelteKit, Docker, MikroORM, MySQL, CodeIgniter y AWS. He liderado migraciones exitosas de sistemas legacy PHP a arquitecturas modernas Node.js, logrando mejoras de hasta 40% en rendimiento.",
+      "p3": "Experiencia desarrollando sistemas completos: plataformas psicométricas procesando miles de evaluaciones mensuales, sistemas de inventario y asignación de equipos, procesos de compras y facturación, integraciones B2B, y pasarelas de pago (Culqi, MercadoPago). También implemento infraestructura cloud con Docker, Cloudflare Tunnels y automatización con n8n."
     },
     "education": {
       "title": "Educación",
-      "degree": "Universidad Nacional San Luis Gonzaga de Ica - Ingeniería de Sistemas (2017-2022)"
+      "degree": "UTP Universidad Tecnológica del Perú - Ingeniería de Software (2022-2025)"
     },
     "skills": {
       "title": "Habilidades",
       "categories": [
         {
+          "title": "Backend & APIs",
+          "skills": "NestJS, TypeScript, Node.js, MikroORM, JWT, Passport, Swagger, REST APIs, i18n"
+        },
+        {
           "title": "Frontend",
-          "skills": "Angular, TypeScript, JavaScript, HTML5, CSS3, Bootstrap"
+          "skills": "SvelteKit, Angular, TypeScript, JavaScript, HTML5, CSS3, Astro"
         },
         {
-          "title": "Backend",
-          "skills": "Node.js, NestJS, PHP, CodeIgniter, Express"
+          "title": "Bases de Datos & ORM",
+          "skills": "MySQL, PostgreSQL, MikroORM, TypeORM, MongoDB"
         },
         {
-          "title": "Bases de datos",
-          "skills": "PostgreSQL, MySQL, MongoDB"
+          "title": "DevOps & Cloud",
+          "skills": "Docker, Docker Compose, Cloudflare Tunnels, AWS (AppRunner, Amplify), Linux, Nginx"
+        },
+        {
+          "title": "Integraciones & Servicios",
+          "skills": "Postmark, Culqi, MercadoPago, n8n, Webhooks, Payment Gateways"
         },
         {
           "title": "Herramientas",
-          "skills": "Git, Docker, AWS, Jira, Confluence"
+          "skills": "Git, GitHub, VS Code, Pino Logger, Jira, Confluence"
         }
       ]
     },
@@ -80,23 +88,59 @@
       "title": "Experiencia",
       "jobs": [
         {
-          "title": "Desarrollador Full Stack Sr",
-          "company": "Grupo ATE",
-          "period": "2022 - Presente",
+          "title": "Analista de Software",
+          "company": "Multitest Resources S.A.C.",
+          "period": "Octubre 2022 - Presente (3 años)",
+          "tags": ["NestJS", "Angular", "Docker", "AWS", "MySQL", "Payments", "B2B Integration", "Migration", "Architecture"],
           "responsibilities": [
-            "Migración de sistemas legado a arquitecturas modernas con mejora del 40% en rendimiento.",
-            "Desarrollo e implementación de integraciones B2B.",
-            "Coordinación del departamento de TI durante transiciones de liderazgo."
+            "Mantuve sistemas legacy con CodeIgniter 3: Smartevaluation (gestión de candidatos y procesos de selección), Opportunities (plataforma para pruebas psicométricas), Admin (gestión de clientes) y Apps (acceso al ecosistema).",
+            "Desarrollé desde cero Smartlite (smartlite.multitestresources.com): sistema ligero réplica del principal con modelo pay-per-use y pagos directos por candidato evaluado.",
+            "Desarrollé en conjunto con TI un sistema completo de bolsa de trabajo para empresas y candidatos, aplicación adicional para el ecosistema Multitest.",
+            "Implementé pasarelas de pago (Culqi y MercadoPago) unificadas en un servicio extensible para futuras pasarelas. Mejoraron notablemente el flujo de compra/venta.",
+            "Integré sistema de facturación Nubefact para generación automática de facturas y boletas.",
+            "Desarrollé dashboard con métricas clave y análisis completo del flujo de ingresos, facturas y boletas generadas.",
+            "Implementé integración B2B con ATS TeamTailor permitiendo a clientes usar evaluaciones Multitest desde su sistema.",
+            "Desarrollé nuevo algoritmo para cálculo y análisis de compatibilidad candidato-perfil, mejorando precisión de selección en 50%.",
+            "Creé reportes PDF para nuevo algoritmo de compatibilidad.",
+            "Mejoré sistema de descarga masiva de reportes: antes se abrían múltiples pestañas (1 por reporte), ahora descarga archivo comprimido en background mejorando UX significativamente.",
+            "Actualicé sistema de webcam para videoentrevistas con librería moderna y soporte iOS (anteriormente no disponible).",
+            "Optimicé generación de reportes en 70% aplicando buenas prácticas en bucles y queries SQL.",
+            "Infraestructura completa: Docker Compose, Cloudflare Tunnels, AWS (AppRunner, Amplify), automatización con n8n."
           ]
         },
         {
-          "title": "Desarrollador Full Stack",
-          "company": "Globant",
-          "period": "2020 - 2022",
+          "title": "Programming Analyst",
+          "company": "Visual Impact S.A.C.",
+          "period": "Febrero 2020 - Septiembre 2022 (2 años 8 meses)",
+          "tags": ["CodeIgniter", "PHP", "Angular", "NestJS", "Git", "SQL Optimization", "Leadership", "ISO 27001", "Migration", "Reporting", "Trade Marketing"],
           "responsibilities": [
-            "Desarrollo de aplicaciones SaaS para evaluaciones de candidatos.",
-            "Implementación de soluciones para pruebas psicométricas.",
-            "Mantenimiento y optimización de sistemas existentes."
+            "Trabajé en el área de Sistemas de empresa dedicada a Trade Marketing, gestionando sistemas operacionales para rutas, GTM y logística.",
+            "Desarrollé reportes web dinámicos para análisis de rutas de distribución, gestión de GTM (Going-to-Market) y métricas operacionales del negocio de Trade Marketing.",
+            "Migré ImpactServices (gestión de inventario, equipos móviles/cómputo, asignaciones, devoluciones) de CodeIgniter 2 a CodeIgniter 3, mejorando mantenibilidad y rendimiento del sistema.",
+            "Desarrollé ImpactBusiness desde cero: sistema completo para gestión de órdenes de compra y logística interna, automatizando proceso de aprovisionamiento.",
+            "Lideré migración de 3 sistemas críticos de CodeIgniter 3 desde PHP 5.6 a PHP 7, logrando mejoras de 40% en rendimiento. Configuré y optimicé servidor Windows Server para la nueva tecnología.",
+            "Optimicé queries SQL complejas en sistemas de reportería reduciendo tiempo de respuesta en 40%, mejorando experiencia de usuario en dashboards operacionales.",
+            "Propuse e implementé Git/GitHub como control de versiones estándar para todo el equipo, reemplazando Tortoise SVN y mejorando colaboración y deployment.",
+            "Propuse modernización del stack tecnológico: desarrollé microfrontends con Angular para ImpactServices y API backend con NestJS para registro y asignación de equipos móviles/cómputo.",
+            "Desarrollé módulos en CodeIgniter que automatizaron procesos manuales de reportería y asignación, ahorrando aproximadamente 20 horas semanales al equipo operativo.",
+            "Participé activamente en implementación de ISO 27001: implementé cifrado de datos personales, gestión segura de credenciales, políticas de contraseñas, rotación cada 90 días y documentación completa de cambios.",
+            "Mantuve y mejoré sistema de recursos humanos para gestión interna de personal.",
+            "Asumí coordinación temporal del departamento de TI (2do año) durante ausencia del coordinador: lideré reuniones diarias, realicé revisiones de código, asigné tareas y reporté avances a gerencia de sistemas."
+          ]
+        },
+        {
+          "title": "Desarrollador Full Stack (Freelance)",
+          "company": "Turno - Sistema de Gestión de Pedidos",
+          "period": "Mayo 2022 - Agosto 2022 (4 meses)",
+          "tags": ["Freelance", "CodeIgniter", "Order Management", "PHP", "MySQL", "Backend"],
+          "responsibilities": [
+            "Proyecto freelance paralelo a mi trabajo principal en Visual Impact, trabajando en Turno.macctec.",
+            "Desarrollé módulos completos para gestión de pedidos: creación, edición, estados y workflow de aprobación.",
+            "Implementé sistema de tracking de órdenes en tiempo real con actualización de estados (pendiente, en proceso, completado, cancelado).",
+            "Diseñé y desarrollé base de datos MySQL para persistencia de pedidos, clientes y productos.",
+            "Creé API endpoints con CodeIgniter para integración con sistema de inventario y facturación.",
+            "Desarrollé panel de administración web para visualización de métricas de pedidos y reportes de ventas.",
+            "Implementé validaciones de negocio y manejo de errores para integridad de datos en el flujo de pedidos."
           ]
         }
       ]

@@ -1,0 +1,13 @@
+VISUAL IMPACT SAC
+
+Experiencia Feb 2020 - Sep 2022
+Le di mantenimiento a diversos sistemas hechos en codeigniter 3 y Codeigniter 2.
+- Desarrolle reportes a principalmente para sistemas web acerca de las Rutas, de los GTM, etc
+- Migre un sistema de Codeigniter 2 a Codeigniter 3 (ImpactServices), sistema para la gestion de inventario, equipos moviles, equipos de computo, sus asignaciones, devoluciones, reportes, etc.
+- Desarrolle un sistema para ordenes de compra y logistica, principalmente era sobre generar ordenes de compra(se llamaba impactBusiness)
+- Migre 3 sistemas de codeigniter 3 de php 5.6 a php7, ademas de apoyar en la configuracion del servidor de windows server para esta tecnologia.
+- Propuse e implemente el uso de control de versiones Git y Github como alternativa mas moderna a la que usabamos(Tortoise SVN)
+- Propuse y desarrolle aplicaciones con Angular y Nest, se hicieron microfrontends para el sistema de ImpactServices antes mencionado, y tambien un backend para lo que se usaria, principalmente para el registro y asignacion de equipos moviles y de computo.
+- Participe con la implementacion ISO 27001 de Visual Impact del lado del manejo y cifrado de datos personales, de claves, gestion de credenciales contrasena segura, cambio cada 90 dias. Documentacion acerca de estos cambios
+- Ademas de participar en el mantenmiento del sistema de recursos humanos.
+- En cierto periodo ya en mi 2do anio, el coordinador de sistemas salio de vacaciones y me dejo a cargo por el tiempo que estuvo fuera, me encargaba principalmente de las reuniones diarias y la revision del codigo y el informe al gerente de sistemas.
