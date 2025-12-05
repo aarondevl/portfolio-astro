@@ -30,7 +30,9 @@ const allProjects = await getCollection("work");
 const projects = allProjects
   .filter(
     (project) =>
-      project.data.visible !== false && project.data.featured === true,
+      project.id.startsWith(lang + "/") &&
+      project.data.visible !== false &&
+      project.data.featured === true,
   )
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 
@@ -100,31 +102,6 @@ const pageDescription = t("site.description");
             {t("index.viewAll")}
             <Icon icon="arrow-right" size="1.2em" />
           </CallToAction>
-        </div>
-      </section>
-
-      <section class="section with-background bg-variant">
-        <header class="section-header stack gap-2 lg:gap-4">
-          <h3>{t("index.mentions.title")}</h3>
-          <p>{t("index.mentions.description")}</p>
-        </header>
-
-        <div class="gallery">
-          <Grid variant="small">
-            {
-              [
-                "Medium",
-                "BuzzFeed",
-                "The Next Web",
-                "awwwards.",
-                "TechCrunch",
-              ].map((brand) => (
-                <li class="mention-card">
-                  <p>{brand}</p>
-                </li>
-              ))
-            }
-          </Grid>
         </div>
       </section>
     </main>
@@ -205,10 +182,6 @@ const pageDescription = t("site.description");
     z-index: -1;
   }
 
-  .with-background.bg-variant::before {
-    --hero-bg: var(--bg-image-subtle-1);
-  }
-
   .section-header {
     justify-self: center;
     text-align: center;
@@ -252,28 +225,6 @@ const pageDescription = t("site.description");
 
     .cta {
       grid-area: cta;
-    }
-  }
-
-  /* ====================================================== */
-
-  .mention-card {
-    display: flex;
-    height: 7rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid var(--gray-800);
-    border-radius: 1.5rem;
-    color: var(--gray-300);
-    background: var(--gradient-subtle);
-    box-shadow: var(--shadow-sm);
-  }
-
-  @media (min-width: 50em) {
-    .mention-card {
-      border-radius: 1.5rem;
-      height: 9.5rem;
     }
   }
 </style>
