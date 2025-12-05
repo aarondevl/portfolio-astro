@@ -1,0 +1,704 @@
+[
+  {
+    "id": "multi-invoice",
+    "data": {
+      "title": "Multi-Invoice Service",
+      "description": "Sistema de gestión de facturación electrónica integrado con Nubefact y SUNAT para la emisión automatizada de comprobantes.\n",
+      "publishDate": "2025-09-01T00:00:00.000Z",
+      "tags": [
+        "NestJS",
+        "Nubefact",
+        "SUNAT",
+        "MySQL",
+        "Swagger"
+      ],
+      "img": "/assets/multi-invoice/architecture-flow.png",
+      "img_alt": "Diagrama de arquitectura mostrando la integración entre SmartLite, el Microservicio y Nubefact"
+    },
+    "body": "> [!NOTE]\n> Servicio crítico que asegura el cumplimiento tributario mediante la emisión de comprobantes electrónicos válidos.\n\n## Sobre el Proyecto\n\n**Multi-Invoice** es un sistema especializado en la gestión y emisión de comprobantes de pago electrónicos (Facturas y Boletas). Funciona como un intermediario robusto entre las aplicaciones comerciales de Multitest y los servicios de facturación de **Nubefact**, asegurando que cada transacción sea reportada correctamente a la **SUNAT**.\n\nEste servicio automatiza la complejidad fiscal, validando datos, calculando impuestos y gestionando la respuesta de los entes reguladores.\n\n## Stack Tecnológico\n\n### Backend (NestJS)\n- **Framework**: NestJS con TypeScript para lógica de negocio estructurada.\n- **Base de Datos**: **MikroORM** con MySQL para almacenamiento de comprobantes y correlativos.\n- **Integración**: Cliente HTTP resiliente para comunicación con API de Nubefact.\n- **Documentación**: API documentada con **Swagger/OpenAPI**.\n- **Internacionalización**: Soporte multi-idioma (ES, EN, PT) con `nestjs-i18n`.\n\n## Características Principales\n\n- **Emisión Automatizada**: Generación de Boletas y Facturas en tiempo real tras el pago.\n- **Integración Nubefact**: Conexión directa con el proveedor de servicios electrónicos (PSE).\n- **Cumplimiento SUNAT**: Validación de reglas de negocio y formatos requeridos por la autoridad tributaria.\n- **Gestión de Correlativos**: Control automático de series y números de comprobantes.\n- **Notificaciones**: Envío automático de comprobantes (PDF/XML) al cliente vía correo electrónico.\n\n## Infraestructura\n- **Docker**: Entorno contenerizado para despliegue consistente.\n- **Logging**: Sistema de trazas con Pino para auditoría de emisiones.\n- **Seguridad**: Autenticación JWT para proteger los endpoints de emisión.",
+    "filePath": "src/content/work/multi-invoice.md",
+    "digest": "01b9f20ee84d9535",
+    "rendered": {
+      "html": "<blockquote>\n<p>[!NOTE]\nServicio crítico que asegura el cumplimiento tributario mediante la emisión de comprobantes electrónicos válidos.</p>\n</blockquote>\n<h2 id=\"sobre-el-proyecto\">Sobre el Proyecto</h2>\n<p><strong>Multi-Invoice</strong> es un sistema especializado en la gestión y emisión de comprobantes de pago electrónicos (Facturas y Boletas). Funciona como un intermediario robusto entre las aplicaciones comerciales de Multitest y los servicios de facturación de <strong>Nubefact</strong>, asegurando que cada transacción sea reportada correctamente a la <strong>SUNAT</strong>.</p>\n<p>Este servicio automatiza la complejidad fiscal, validando datos, calculando impuestos y gestionando la respuesta de los entes reguladores.</p>\n<h2 id=\"stack-tecnológico\">Stack Tecnológico</h2>\n<h3 id=\"backend-nestjs\">Backend (NestJS)</h3>\n<ul>\n<li><strong>Framework</strong>: NestJS con TypeScript para lógica de negocio estructurada.</li>\n<li><strong>Base de Datos</strong>: <strong>MikroORM</strong> con MySQL para almacenamiento de comprobantes y correlativos.</li>\n<li><strong>Integración</strong>: Cliente HTTP resiliente para comunicación con API de Nubefact.</li>\n<li><strong>Documentación</strong>: API documentada con <strong>Swagger/OpenAPI</strong>.</li>\n<li><strong>Internacionalización</strong>: Soporte multi-idioma (ES, EN, PT) con <code>nestjs-i18n</code>.</li>\n</ul>\n<h2 id=\"características-principales\">Características Principales</h2>\n<ul>\n<li><strong>Emisión Automatizada</strong>: Generación de Boletas y Facturas en tiempo real tras el pago.</li>\n<li><strong>Integración Nubefact</strong>: Conexión directa con el proveedor de servicios electrónicos (PSE).</li>\n<li><strong>Cumplimiento SUNAT</strong>: Validación de reglas de negocio y formatos requeridos por la autoridad tributaria.</li>\n<li><strong>Gestión de Correlativos</strong>: Control automático de series y números de comprobantes.</li>\n<li><strong>Notificaciones</strong>: Envío automático de comprobantes (PDF/XML) al cliente vía correo electrónico.</li>\n</ul>\n<h2 id=\"infraestructura\">Infraestructura</h2>\n<ul>\n<li><strong>Docker</strong>: Entorno contenerizado para despliegue consistente.</li>\n<li><strong>Logging</strong>: Sistema de trazas con Pino para auditoría de emisiones.</li>\n<li><strong>Seguridad</strong>: Autenticación JWT para proteger los endpoints de emisión.</li>\n</ul>",
+      "metadata": {
+        "headings": [
+          {
+            "depth": 2,
+            "slug": "sobre-el-proyecto",
+            "text": "Sobre el Proyecto"
+          },
+          {
+            "depth": 2,
+            "slug": "stack-tecnológico",
+            "text": "Stack Tecnológico"
+          },
+          {
+            "depth": 3,
+            "slug": "backend-nestjs",
+            "text": "Backend (NestJS)"
+          },
+          {
+            "depth": 2,
+            "slug": "características-principales",
+            "text": "Características Principales"
+          },
+          {
+            "depth": 2,
+            "slug": "infraestructura",
+            "text": "Infraestructura"
+          }
+        ],
+        "localImagePaths": [],
+        "remoteImagePaths": [],
+        "frontmatter": {
+          "title": "Multi-Invoice Service",
+          "publishDate": "2025-09-01T00:00:00.000Z",
+          "img": "/assets/multi-invoice/architecture-flow.png",
+          "img_alt": "Diagrama de arquitectura mostrando la integración entre SmartLite, el Microservicio y Nubefact",
+          "description": "Sistema de gestión de facturación electrónica integrado con Nubefact y SUNAT para la emisión automatizada de comprobantes.\n",
+          "tags": [
+            "NestJS",
+            "Nubefact",
+            "SUNAT",
+            "MySQL",
+            "Swagger"
+          ],
+          "featured": true,
+          "visible": true
+        },
+        "imagePaths": []
+      }
+    },
+    "collection": "work"
+  },
+  {
+    "id": "multitest-multijobs",
+    "data": {
+      "title": "Multijobs Platform",
+      "description": "Plataforma integral de reclutamiento y selección que conecta empresas con candidatos mediante un sistema moderno, seguro y escalable.\n",
+      "publishDate": "2025-12-05T00:00:00.000Z",
+      "tags": [
+        "Angular",
+        "NestJS",
+        "TypeScript",
+        "Docker",
+        "MySQL",
+        "Tailwind"
+      ],
+      "img": "/assets/multijobs/frontpage.png",
+      "img_alt": "Dashboard de Multijobs mostrando gestión de candidatos y vacantes"
+    },
+    "body": "> [!NOTE]\n> Proyecto activo en desarrollo continuo, implementando las últimas tecnologías en desarrollo web.\n\n## Sobre el Proyecto\n\n**Multijobs** es una plataforma de reclutamiento de última generación diseñada para optimizar la conexión entre empresas y talento. Funciona como un espacio de trabajo unificado donde las empresas pueden gestionar todo el ciclo de vida de la contratación, desde la publicación de vacantes hasta la selección final, mientras que los candidatos disfrutan de una experiencia de postulación fluida y profesional.\n\nEl sistema se destaca por su arquitectura robusta que soporta múltiples aplicaciones (Empresas y Candidatos) operando sobre un backend centralizado y seguro.\n\n## Stack Tecnológico\n\n### Backend (NestJS)\nArquitectura modular y escalable construida con **NestJS** y **TypeScript**.\n- **ORM**: MikroORM con MySQL para una gestión de datos eficiente y tipada.\n- **Seguridad**: Autenticación JWT dual (Candidatos y Empresas) con Passport strategies.\n- **Documentación**: API completamente documentada con Swagger/OpenAPI.\n- **Validación**: Pipelines de validación robustos con `class-validator`.\n- **Patrones**: Uso de DTOs, Serializers y el patrón Repository para un código limpio y mantenible.\n\n### Frontend (Angular 20)\nMonorepo moderno utilizando las últimas características de **Angular 20**.\n- **Arquitectura**: Workspace multi-aplicación (`company-app` y `candidate-app`).\n- **Estado**: Gestión de estado reactiva utilizando **Angular Signals**.\n- **UI/UX**: Diseño responsive con **Tailwind CSS** y componentes Flowbite.\n- **Seguridad**: Guards de autenticación y verificación de dos pasos (2FA).\n- **Integración**: Cliente API auto-generado desde especificación OpenAPI.\n\n## Características Principales\n\n### Para Empresas\n- **Gestión de Vacantes**: Creación y edición completa de ofertas de trabajo con requisitos detallados.\n- **Pipeline de Talento**: Visualización y gestión de candidatos en diferentes etapas del proceso.\n- **Perfiles de Empresa**: Administración de información corporativa y gestión de usuarios del equipo.\n- **Roles y Permisos**: Sistema granular de control de acceso para diferentes niveles de usuarios corporativos.\n\n### Para Candidatos\n- **CV Wizard**: Constructor de currículum interactivo y exportable.\n- **Multimedia**: Carga de CVs, fotos de perfil y videos de presentación almacenados en **AWS S3**.\n- **Búsqueda Inteligente**: Filtrado avanzado de ofertas por ubicación, área y modalidad.\n- **Seguridad Avanzada**: Autenticación de dos factores (2FA) para proteger la cuenta.\n\n## Infraestructura y DevOps\n- **Cloud Storage**: Integración con **AWS S3** para gestión segura y escalable de archivos multimedia (imágenes, documentos, videos).\n- **IaC (Infraestructura como Código)**: Despliegue automatizado utilizando **Pulumi**.\n- **Despliegue**: Arquitectura serverless y contenerizada usando **AWS App Runner** (Backend) y **AWS Amplify** (Frontend).\n- **Docker**: Contenerización completa para desarrollo y despliegue consistente.\n- **Calidad de Software**:\n    - **Unit Testing**: Pruebas exhaustivas con Karma/Jasmine.\n    - **E2E Testing**: Flujos críticos validados con Cypress.\n    - **CI/CD**: Pipelines automatizados para construcción y verificación.",
+    "filePath": "src/content/work/multitest-multijobs.md",
+    "digest": "b7714731c7fd209d",
+    "rendered": {
+      "html": "<blockquote>\n<p>[!NOTE]\nProyecto activo en desarrollo continuo, implementando las últimas tecnologías en desarrollo web.</p>\n</blockquote>\n<h2 id=\"sobre-el-proyecto\">Sobre el Proyecto</h2>\n<p><strong>Multijobs</strong> es una plataforma de reclutamiento de última generación diseñada para optimizar la conexión entre empresas y talento. Funciona como un espacio de trabajo unificado donde las empresas pueden gestionar todo el ciclo de vida de la contratación, desde la publicación de vacantes hasta la selección final, mientras que los candidatos disfrutan de una experiencia de postulación fluida y profesional.</p>\n<p>El sistema se destaca por su arquitectura robusta que soporta múltiples aplicaciones (Empresas y Candidatos) operando sobre un backend centralizado y seguro.</p>\n<h2 id=\"stack-tecnológico\">Stack Tecnológico</h2>\n<h3 id=\"backend-nestjs\">Backend (NestJS)</h3>\n<p>Arquitectura modular y escalable construida con <strong>NestJS</strong> y <strong>TypeScript</strong>.</p>\n<ul>\n<li><strong>ORM</strong>: MikroORM con MySQL para una gestión de datos eficiente y tipada.</li>\n<li><strong>Seguridad</strong>: Autenticación JWT dual (Candidatos y Empresas) con Passport strategies.</li>\n<li><strong>Documentación</strong>: API completamente documentada con Swagger/OpenAPI.</li>\n<li><strong>Validación</strong>: Pipelines de validación robustos con <code>class-validator</code>.</li>\n<li><strong>Patrones</strong>: Uso de DTOs, Serializers y el patrón Repository para un código limpio y mantenible.</li>\n</ul>\n<h3 id=\"frontend-angular-20\">Frontend (Angular 20)</h3>\n<p>Monorepo moderno utilizando las últimas características de <strong>Angular 20</strong>.</p>\n<ul>\n<li><strong>Arquitectura</strong>: Workspace multi-aplicación (<code>company-app</code> y <code>candidate-app</code>).</li>\n<li><strong>Estado</strong>: Gestión de estado reactiva utilizando <strong>Angular Signals</strong>.</li>\n<li><strong>UI/UX</strong>: Diseño responsive con <strong>Tailwind CSS</strong> y componentes Flowbite.</li>\n<li><strong>Seguridad</strong>: Guards de autenticación y verificación de dos pasos (2FA).</li>\n<li><strong>Integración</strong>: Cliente API auto-generado desde especificación OpenAPI.</li>\n</ul>\n<h2 id=\"características-principales\">Características Principales</h2>\n<h3 id=\"para-empresas\">Para Empresas</h3>\n<ul>\n<li><strong>Gestión de Vacantes</strong>: Creación y edición completa de ofertas de trabajo con requisitos detallados.</li>\n<li><strong>Pipeline de Talento</strong>: Visualización y gestión de candidatos en diferentes etapas del proceso.</li>\n<li><strong>Perfiles de Empresa</strong>: Administración de información corporativa y gestión de usuarios del equipo.</li>\n<li><strong>Roles y Permisos</strong>: Sistema granular de control de acceso para diferentes niveles de usuarios corporativos.</li>\n</ul>\n<h3 id=\"para-candidatos\">Para Candidatos</h3>\n<ul>\n<li><strong>CV Wizard</strong>: Constructor de currículum interactivo y exportable.</li>\n<li><strong>Multimedia</strong>: Carga de CVs, fotos de perfil y videos de presentación almacenados en <strong>AWS S3</strong>.</li>\n<li><strong>Búsqueda Inteligente</strong>: Filtrado avanzado de ofertas por ubicación, área y modalidad.</li>\n<li><strong>Seguridad Avanzada</strong>: Autenticación de dos factores (2FA) para proteger la cuenta.</li>\n</ul>\n<h2 id=\"infraestructura-y-devops\">Infraestructura y DevOps</h2>\n<ul>\n<li><strong>Cloud Storage</strong>: Integración con <strong>AWS S3</strong> para gestión segura y escalable de archivos multimedia (imágenes, documentos, videos).</li>\n<li><strong>IaC (Infraestructura como Código)</strong>: Despliegue automatizado utilizando <strong>Pulumi</strong>.</li>\n<li><strong>Despliegue</strong>: Arquitectura serverless y contenerizada usando <strong>AWS App Runner</strong> (Backend) y <strong>AWS Amplify</strong> (Frontend).</li>\n<li><strong>Docker</strong>: Contenerización completa para desarrollo y despliegue consistente.</li>\n<li><strong>Calidad de Software</strong>:\n<ul>\n<li><strong>Unit Testing</strong>: Pruebas exhaustivas con Karma/Jasmine.</li>\n<li><strong>E2E Testing</strong>: Flujos críticos validados con Cypress.</li>\n<li><strong>CI/CD</strong>: Pipelines automatizados para construcción y verificación.</li>\n</ul>\n</li>\n</ul>",
+      "metadata": {
+        "headings": [
+          {
+            "depth": 2,
+            "slug": "sobre-el-proyecto",
+            "text": "Sobre el Proyecto"
+          },
+          {
+            "depth": 2,
+            "slug": "stack-tecnológico",
+            "text": "Stack Tecnológico"
+          },
+          {
+            "depth": 3,
+            "slug": "backend-nestjs",
+            "text": "Backend (NestJS)"
+          },
+          {
+            "depth": 3,
+            "slug": "frontend-angular-20",
+            "text": "Frontend (Angular 20)"
+          },
+          {
+            "depth": 2,
+            "slug": "características-principales",
+            "text": "Características Principales"
+          },
+          {
+            "depth": 3,
+            "slug": "para-empresas",
+            "text": "Para Empresas"
+          },
+          {
+            "depth": 3,
+            "slug": "para-candidatos",
+            "text": "Para Candidatos"
+          },
+          {
+            "depth": 2,
+            "slug": "infraestructura-y-devops",
+            "text": "Infraestructura y DevOps"
+          }
+        ],
+        "localImagePaths": [],
+        "remoteImagePaths": [],
+        "frontmatter": {
+          "title": "Multijobs Platform",
+          "publishDate": "2025-12-05T00:00:00.000Z",
+          "img": "/assets/multijobs/frontpage.png",
+          "img_alt": "Dashboard de Multijobs mostrando gestión de candidatos y vacantes",
+          "description": "Plataforma integral de reclutamiento y selección que conecta empresas con candidatos mediante un sistema moderno, seguro y escalable.\n",
+          "tags": [
+            "Angular",
+            "NestJS",
+            "TypeScript",
+            "Docker",
+            "MySQL",
+            "Tailwind"
+          ],
+          "featured": true,
+          "visible": true
+        },
+        "imagePaths": []
+      }
+    },
+    "collection": "work"
+  },
+  {
+    "id": "multitest-smartlite",
+    "data": {
+      "title": "SmartLite",
+      "description": "Sistema integral para la gestión de evaluaciones psicométricas, procesos de selección y pagos, utilizado en producción.\n",
+      "publishDate": "2025-11-01T00:00:00.000Z",
+      "tags": [
+        "NestJS",
+        "Angular",
+        "MikroORM",
+        "AWS",
+        "CI/CD"
+      ],
+      "img": "/assets/smartlite/dashboard.png",
+      "img_alt": "Dashboard de SmartEvaluation Lite mostrando gestión de evaluaciones"
+    },
+    "body": "> Proyecto en producción, gestionando procesos reales de selección y evaluaciones psicométricas.\n> [Ver sitio en vivo](https://www.smartlite.multitestresources.com/login?redirect=%2Fhome)\n\n## Sobre el Proyecto\n\n**SmartEvaluation Lite** es una aplicación robusta diseñada para gestionar el ciclo completo de evaluaciones psicométricas. Permite a las empresas administrar candidatos, procesos de selección, pagos y créditos, integrándose con servicios externos como MercadoPago y Culqi.\n\nEl sistema está construido con una arquitectura modular en NestJS para el backend y Angular 17 para el frontend, garantizando escalabilidad y mantenibilidad.\n\n## Stack Tecnológico\n\n### Backend (NestJS)\n- **Arquitectura**: Modular con dominios separados (Auth, Users, Processes, Psychometric Test, Payments).\n- **Base de Datos**: **MikroORM** con MySQL, soportando múltiples esquemas y conexiones por ambiente.\n- **Autenticación**: JWT con Passport Strategy y Guards personalizados.\n- **Pagos**: Integración con MercadoPago y sistema de créditos interno.\n- **Emailing**: Servicio de correos transaccionales con **Postmark**.\n- **Calidad**: Testing unitario y E2E, con pipelines de CI/CD en Jenkins.\n\n### Frontend (Angular 17)\n- **Framework**: Angular 17 utilizando **Signals** para gestión de estado reactiva.\n- **Estilos**: Diseño moderno y responsive con **Tailwind CSS**.\n- **Arquitectura**: Componentes reutilizables y servicios optimizados.\n\n## Características Principales\n\n- **Gestión de Evaluaciones**: Administración completa de baterías de pruebas psicométricas.\n- **Procesos de Selección**: Flujos de trabajo configurables para diferentes tipos de convocatorias.\n- **Sistema de Créditos y Pagos**: Manejo de saldo y transacciones para el uso de la plataforma.\n- **Multi-ambiente**: Configuración dinámica para entornos Local, Desarrollo y Producción.\n- **Internacionalización**: Soporte multi-idioma (i18n) en backend y frontend.\n\n## Infraestructura\n- **Backend Cloud**: Despliegue serverless escalable en **AWS App Runner**.\n- **Frontend Cloud**: Hosting y CI/CD automatizado con **AWS Amplify**.\n- **Docker**: Despliegue contenerizado para consistencia entre entornos.\n- **Testing**: Pruebas unitarias y E2E integradas en el ciclo de desarrollo.\n- **CI/CD**: Pipelines automatizados para construcción, pruebas y despliegue continuo.\n- **Monitoreo**: Logging estructurado con Pino y chequeos de salud (Health Checks).",
+    "filePath": "src/content/work/multitest-smartlite.md",
+    "digest": "1df1a5936a4ca4e9",
+    "rendered": {
+      "html": "<blockquote>\n<p>Proyecto en producción, gestionando procesos reales de selección y evaluaciones psicométricas.\n<a href=\"https://www.smartlite.multitestresources.com/login?redirect=%2Fhome\">Ver sitio en vivo</a></p>\n</blockquote>\n<h2 id=\"sobre-el-proyecto\">Sobre el Proyecto</h2>\n<p><strong>SmartEvaluation Lite</strong> es una aplicación robusta diseñada para gestionar el ciclo completo de evaluaciones psicométricas. Permite a las empresas administrar candidatos, procesos de selección, pagos y créditos, integrándose con servicios externos como MercadoPago y Culqi.</p>\n<p>El sistema está construido con una arquitectura modular en NestJS para el backend y Angular 17 para el frontend, garantizando escalabilidad y mantenibilidad.</p>\n<h2 id=\"stack-tecnológico\">Stack Tecnológico</h2>\n<h3 id=\"backend-nestjs\">Backend (NestJS)</h3>\n<ul>\n<li><strong>Arquitectura</strong>: Modular con dominios separados (Auth, Users, Processes, Psychometric Test, Payments).</li>\n<li><strong>Base de Datos</strong>: <strong>MikroORM</strong> con MySQL, soportando múltiples esquemas y conexiones por ambiente.</li>\n<li><strong>Autenticación</strong>: JWT con Passport Strategy y Guards personalizados.</li>\n<li><strong>Pagos</strong>: Integración con MercadoPago y sistema de créditos interno.</li>\n<li><strong>Emailing</strong>: Servicio de correos transaccionales con <strong>Postmark</strong>.</li>\n<li><strong>Calidad</strong>: Testing unitario y E2E, con pipelines de CI/CD en Jenkins.</li>\n</ul>\n<h3 id=\"frontend-angular-17\">Frontend (Angular 17)</h3>\n<ul>\n<li><strong>Framework</strong>: Angular 17 utilizando <strong>Signals</strong> para gestión de estado reactiva.</li>\n<li><strong>Estilos</strong>: Diseño moderno y responsive con <strong>Tailwind CSS</strong>.</li>\n<li><strong>Arquitectura</strong>: Componentes reutilizables y servicios optimizados.</li>\n</ul>\n<h2 id=\"características-principales\">Características Principales</h2>\n<ul>\n<li><strong>Gestión de Evaluaciones</strong>: Administración completa de baterías de pruebas psicométricas.</li>\n<li><strong>Procesos de Selección</strong>: Flujos de trabajo configurables para diferentes tipos de convocatorias.</li>\n<li><strong>Sistema de Créditos y Pagos</strong>: Manejo de saldo y transacciones para el uso de la plataforma.</li>\n<li><strong>Multi-ambiente</strong>: Configuración dinámica para entornos Local, Desarrollo y Producción.</li>\n<li><strong>Internacionalización</strong>: Soporte multi-idioma (i18n) en backend y frontend.</li>\n</ul>\n<h2 id=\"infraestructura\">Infraestructura</h2>\n<ul>\n<li><strong>Backend Cloud</strong>: Despliegue serverless escalable en <strong>AWS App Runner</strong>.</li>\n<li><strong>Frontend Cloud</strong>: Hosting y CI/CD automatizado con <strong>AWS Amplify</strong>.</li>\n<li><strong>Docker</strong>: Despliegue contenerizado para consistencia entre entornos.</li>\n<li><strong>Testing</strong>: Pruebas unitarias y E2E integradas en el ciclo de desarrollo.</li>\n<li><strong>CI/CD</strong>: Pipelines automatizados para construcción, pruebas y despliegue continuo.</li>\n<li><strong>Monitoreo</strong>: Logging estructurado con Pino y chequeos de salud (Health Checks).</li>\n</ul>",
+      "metadata": {
+        "headings": [
+          {
+            "depth": 2,
+            "slug": "sobre-el-proyecto",
+            "text": "Sobre el Proyecto"
+          },
+          {
+            "depth": 2,
+            "slug": "stack-tecnológico",
+            "text": "Stack Tecnológico"
+          },
+          {
+            "depth": 3,
+            "slug": "backend-nestjs",
+            "text": "Backend (NestJS)"
+          },
+          {
+            "depth": 3,
+            "slug": "frontend-angular-17",
+            "text": "Frontend (Angular 17)"
+          },
+          {
+            "depth": 2,
+            "slug": "características-principales",
+            "text": "Características Principales"
+          },
+          {
+            "depth": 2,
+            "slug": "infraestructura",
+            "text": "Infraestructura"
+          }
+        ],
+        "localImagePaths": [],
+        "remoteImagePaths": [],
+        "frontmatter": {
+          "title": "SmartLite",
+          "publishDate": "2025-11-01T00:00:00.000Z",
+          "img": "/assets/smartlite/dashboard.png",
+          "img_alt": "Dashboard de SmartEvaluation Lite mostrando gestión de evaluaciones",
+          "description": "Sistema integral para la gestión de evaluaciones psicométricas, procesos de selección y pagos, utilizado en producción.\n",
+          "tags": [
+            "NestJS",
+            "Angular",
+            "MikroORM",
+            "AWS",
+            "CI/CD"
+          ],
+          "featured": true,
+          "visible": true
+        },
+        "imagePaths": []
+      }
+    },
+    "collection": "work"
+  },
+  {
+    "id": "teamtailor-integration",
+    "data": {
+      "title": "Teamtailor ATS Integration",
+      "description": "Middleware de integración que conecta el ATS Teamtailor con la plataforma Multitest para sincronización de candidatos y reportes.\n",
+      "publishDate": "2023-06-15T00:00:00.000Z",
+      "tags": [
+        "Node.js",
+        "Webhooks",
+        "API Integration",
+        "Automation"
+      ],
+      "img": "/assets/teamtailor/integration-flow.png",
+      "img_alt": "Diagrama de flujo mostrando la sincronización entre Teamtailor y Multitest"
+    },
+    "body": "> [!NOTE]\n> Solución de integración que automatiza el flujo de reclutamiento entre plataformas externas y sistemas internos.\n\n## Sobre el Proyecto\n\nEste proyecto es un middleware inteligente diseñado para conectar el ecosistema de **Multitest** con **Teamtailor**, un ATS (Applicant Tracking System) líder en el mercado.\n\nActúa como un receptor y procesador de eventos en tiempo real, interceptando los webhooks generados por Teamtailor (como \"Nuevo Candidato\" o \"Cambio de Etapa\") para desencadenar acciones automáticas en Multitest, como la creación de usuarios o la asignación de evaluaciones.\n\n## Stack Tecnológico\n\n- **Runtime**: **Node.js** para un procesamiento ligero y eficiente de eventos asíncronos.\n- **Comunicación**: Arquitectura basada en **Webhooks** y APIs REST.\n- **Seguridad**: Validación de payloads y firmas digitales para asegurar la integridad de los datos.\n\n## Características Principales\n\n- **Sincronización Bidireccional**: Mantiene los datos de los candidatos actualizados en ambas plataformas.\n- **Visualización de Reportes**: Permite a los reclutadores ver los resultados de las evaluaciones psicométricas de Multitest directamente dentro de la interfaz de Teamtailor.\n- **Automatización de Flujos**: Elimina la entrada manual de datos, reduciendo errores y ahorrando tiempo al equipo de RRHH.\n- **Procesamiento de Eventos**: Análisis inteligente de payloads JSON para determinar la acción correcta a ejecutar.\n\n## Impacto\n\nEsta integración permitió a los clientes de Multitest utilizar su ATS preferido sin perder la potencia de las evaluaciones psicométricas especializadas, creando una experiencia de usuario fluida y unificada.",
+    "filePath": "src/content/work/teamtailor-integration.md",
+    "digest": "bb33e373a755af48",
+    "rendered": {
+      "html": "<blockquote>\n<p>[!NOTE]\nSolución de integración que automatiza el flujo de reclutamiento entre plataformas externas y sistemas internos.</p>\n</blockquote>\n<h2 id=\"sobre-el-proyecto\">Sobre el Proyecto</h2>\n<p>Este proyecto es un middleware inteligente diseñado para conectar el ecosistema de <strong>Multitest</strong> con <strong>Teamtailor</strong>, un ATS (Applicant Tracking System) líder en el mercado.</p>\n<p>Actúa como un receptor y procesador de eventos en tiempo real, interceptando los webhooks generados por Teamtailor (como “Nuevo Candidato” o “Cambio de Etapa”) para desencadenar acciones automáticas en Multitest, como la creación de usuarios o la asignación de evaluaciones.</p>\n<h2 id=\"stack-tecnológico\">Stack Tecnológico</h2>\n<ul>\n<li><strong>Runtime</strong>: <strong>Node.js</strong> para un procesamiento ligero y eficiente de eventos asíncronos.</li>\n<li><strong>Comunicación</strong>: Arquitectura basada en <strong>Webhooks</strong> y APIs REST.</li>\n<li><strong>Seguridad</strong>: Validación de payloads y firmas digitales para asegurar la integridad de los datos.</li>\n</ul>\n<h2 id=\"características-principales\">Características Principales</h2>\n<ul>\n<li><strong>Sincronización Bidireccional</strong>: Mantiene los datos de los candidatos actualizados en ambas plataformas.</li>\n<li><strong>Visualización de Reportes</strong>: Permite a los reclutadores ver los resultados de las evaluaciones psicométricas de Multitest directamente dentro de la interfaz de Teamtailor.</li>\n<li><strong>Automatización de Flujos</strong>: Elimina la entrada manual de datos, reduciendo errores y ahorrando tiempo al equipo de RRHH.</li>\n<li><strong>Procesamiento de Eventos</strong>: Análisis inteligente de payloads JSON para determinar la acción correcta a ejecutar.</li>\n</ul>\n<h2 id=\"impacto\">Impacto</h2>\n<p>Esta integración permitió a los clientes de Multitest utilizar su ATS preferido sin perder la potencia de las evaluaciones psicométricas especializadas, creando una experiencia de usuario fluida y unificada.</p>",
+      "metadata": {
+        "headings": [
+          {
+            "depth": 2,
+            "slug": "sobre-el-proyecto",
+            "text": "Sobre el Proyecto"
+          },
+          {
+            "depth": 2,
+            "slug": "stack-tecnológico",
+            "text": "Stack Tecnológico"
+          },
+          {
+            "depth": 2,
+            "slug": "características-principales",
+            "text": "Características Principales"
+          },
+          {
+            "depth": 2,
+            "slug": "impacto",
+            "text": "Impacto"
+          }
+        ],
+        "localImagePaths": [],
+        "remoteImagePaths": [],
+        "frontmatter": {
+          "title": "Teamtailor ATS Integration",
+          "publishDate": "2023-06-15T00:00:00.000Z",
+          "img": "/assets/teamtailor/integration-flow.png",
+          "img_alt": "Diagrama de flujo mostrando la sincronización entre Teamtailor y Multitest",
+          "description": "Middleware de integración que conecta el ATS Teamtailor con la plataforma Multitest para sincronización de candidatos y reportes.\n",
+          "tags": [
+            "Node.js",
+            "Webhooks",
+            "API Integration",
+            "Automation"
+          ],
+          "featured": true,
+          "visible": true
+        },
+        "imagePaths": []
+      }
+    },
+    "collection": "work"
+  },
+  {
+    "id": "nestjs-payment-integration",
+    "data": {
+      "title": "SmartPay Integration Service",
+      "description": "Microservicio backend especializado en el procesamiento de pagos, integrando pasarelas como Culqi y MercadoPago.\n",
+      "publishDate": "2025-12-01T00:00:00.000Z",
+      "tags": [
+        "NestJS",
+        "Culqi",
+        "MercadoPago",
+        "Swagger",
+        "MikroORM"
+      ],
+      "img": "/assets/smartpay/payment-orchestration.png",
+      "img_alt": "Diagrama de arquitectura del servicio de orquestación de pagos conectando con Culqi y MercadoPago"
+    },
+    "body": "> [!NOTE]\n> Servicio crítico en producción que procesa transacciones financieras en tiempo real.\n\n## Sobre el Proyecto\n\n**SmartPay** es el motor financiero del ecosistema Multitest. Es un backend especializado encargado de orquestar todas las transacciones de pago, garantizando seguridad, trazabilidad y conciliación.\n\nActúa como una capa de abstracción unificada sobre múltiples pasarelas de pago, permitiendo a las aplicaciones cliente (como SmartLite) procesar cobros sin lidiar con la complejidad específica de cada proveedor.\n\n## Stack Tecnológico\n\n### Backend (NestJS)\n- **Core**: NestJS con TypeScript para una arquitectura robusta y tipada.\n- **Base de Datos**: **MikroORM** con MySQL para persistencia transaccional.\n- **Documentación**: API documentada exhaustivamente con **Swagger/OpenAPI**.\n- **Logging**: Sistema de logs estructurados con Pino para auditoría financiera.\n- **Emailing**: Notificaciones transaccionales vía Postmark.\n\n## Integraciones Clave\n\n### Pasarelas de Pago\n- **Culqi**: Procesamiento de tarjetas de crédito/débito y Yape. Manejo de autenticación 3DS.\n- **MercadoPago**: Integración completa para cobros en Latinoamérica.\n- **Webhooks**: Sistema robusto para recibir y validar notificaciones asíncronas de pago.\n\n## Características Principales\n\n- **Abstracción de Pagos**: API unificada para crear órdenes y procesar cargos independientemente del proveedor.\n- **Seguridad**: Manejo seguro de tokens y validación de firmas en webhooks.\n- **Trazabilidad**: Registro detallado de cada intento de transacción y respuesta de las pasarelas.\n- **Notificaciones**: Envío automático de comprobantes y alertas de pago a clientes y comercios.\n- **Soporte Multi-moneda**: Manejo de Soles (PEN) y Dólares (USD) con precisión decimal.\n\n## Infraestructura\n- **Docker**: Entorno contenerizado para desarrollo y producción.\n- **Testing**: Pruebas unitarias y E2E para garantizar la integridad financiera.\n- **CI/CD**: Pipelines automatizados para despliegue seguro.onfigurables:\n- Basic: 100 créditos\n- Professional: 500 créditos (+10% bonus)\n- Enterprise: 2000 créditos (+20% bonus)\n\nUso:\n- Tracking en tiempo real\n- Expiración configurable\n- Renovación automática (opcional)\n```\n\n## Integración con Otros Módulos\n\n### Mailing (Postmark)\n- Confirmación de pago\n- Factura electrónica\n- Alertas de saldo\n\n### Notifications\n- Notificaciones push\n- Alertas en dashboard\n- Reportes periódicos\n\n### Users\n- Historial de pagos\n- Preferencias de facturación\n- Métodos de pago guardados\n\n## Manejo de Errores\n\nImplementación robusta de error handling:\n\n```typescript\n- Pagos rechazados\n- Timeouts de pasarela\n- Webhooks duplicados\n- Errores de red\n- Validación de datos\n```\n\nRetry automático con backoff exponencial para fallos transitorios.\n\n## Monitoreo y Reporting\n\n### Métricas Tracked\n- Tasa de éxito de pagos\n- Tiempo promedio de procesamiento\n- Monto total procesado\n- Conversión por pasarela\n- Errores y rechazos\n\n### Dashboards\n- Panel de administración\n- Reportes por período\n- Análisis por pasarela\n- Tracking de créditos\n- Alertas automáticas\n\n## Testing\n\nSuite completa de tests:\n\n```typescript\n- Unit tests para servicios\n- Integration tests para pasarelas (sandbox)\n- E2E tests para flujos completos\n- Mock de webhooks\n- Test de rollback transaccional\n```\n\n## Resultados\n\n- ✅ **Miles de transacciones** procesadas mensualmente\n- ✅ **99.9% success rate** en procesamiento\n- ✅ **<3s** tiempo promedio de respuesta\n- ✅ **Zero data loss** con transacciones ACID\n- ✅ **Facturación automática** 100% confiable\n- ✅ **Multi-currency** support (PEN, USD)\n\n## Desafíos Superados\n\n1. **Reconciliación de pagos**: Sistema automático de matching entre webhooks y órdenes\n2. **Idempotencia**: Prevención de cargos duplicados\n3. **Failover**: Cambio automático de pasarela en caso de falla\n4. **Compliance**: Cumplimiento de regulaciones PCI-DSS\n\nEste módulo es crítico para el negocio, procesando el 100% de los ingresos de la plataforma con alta confiabilidad y seguridad.",
+    "filePath": "src/content/work/nestjs-payment-integration.md",
+    "digest": "93f4b2aa2e9506c5",
+    "rendered": {
+      "html": "<blockquote>\n<p>[!NOTE]\nServicio crítico en producción que procesa transacciones financieras en tiempo real.</p>\n</blockquote>\n<h2 id=\"sobre-el-proyecto\">Sobre el Proyecto</h2>\n<p><strong>SmartPay</strong> es el motor financiero del ecosistema Multitest. Es un backend especializado encargado de orquestar todas las transacciones de pago, garantizando seguridad, trazabilidad y conciliación.</p>\n<p>Actúa como una capa de abstracción unificada sobre múltiples pasarelas de pago, permitiendo a las aplicaciones cliente (como SmartLite) procesar cobros sin lidiar con la complejidad específica de cada proveedor.</p>\n<h2 id=\"stack-tecnológico\">Stack Tecnológico</h2>\n<h3 id=\"backend-nestjs\">Backend (NestJS)</h3>\n<ul>\n<li><strong>Core</strong>: NestJS con TypeScript para una arquitectura robusta y tipada.</li>\n<li><strong>Base de Datos</strong>: <strong>MikroORM</strong> con MySQL para persistencia transaccional.</li>\n<li><strong>Documentación</strong>: API documentada exhaustivamente con <strong>Swagger/OpenAPI</strong>.</li>\n<li><strong>Logging</strong>: Sistema de logs estructurados con Pino para auditoría financiera.</li>\n<li><strong>Emailing</strong>: Notificaciones transaccionales vía Postmark.</li>\n</ul>\n<h2 id=\"integraciones-clave\">Integraciones Clave</h2>\n<h3 id=\"pasarelas-de-pago\">Pasarelas de Pago</h3>\n<ul>\n<li><strong>Culqi</strong>: Procesamiento de tarjetas de crédito/débito y Yape. Manejo de autenticación 3DS.</li>\n<li><strong>MercadoPago</strong>: Integración completa para cobros en Latinoamérica.</li>\n<li><strong>Webhooks</strong>: Sistema robusto para recibir y validar notificaciones asíncronas de pago.</li>\n</ul>\n<h2 id=\"características-principales\">Características Principales</h2>\n<ul>\n<li><strong>Abstracción de Pagos</strong>: API unificada para crear órdenes y procesar cargos independientemente del proveedor.</li>\n<li><strong>Seguridad</strong>: Manejo seguro de tokens y validación de firmas en webhooks.</li>\n<li><strong>Trazabilidad</strong>: Registro detallado de cada intento de transacción y respuesta de las pasarelas.</li>\n<li><strong>Notificaciones</strong>: Envío automático de comprobantes y alertas de pago a clientes y comercios.</li>\n<li><strong>Soporte Multi-moneda</strong>: Manejo de Soles (PEN) y Dólares (USD) con precisión decimal.</li>\n</ul>\n<h2 id=\"infraestructura\">Infraestructura</h2>\n<ul>\n<li><strong>Docker</strong>: Entorno contenerizado para desarrollo y producción.</li>\n<li><strong>Testing</strong>: Pruebas unitarias y E2E para garantizar la integridad financiera.</li>\n<li><strong>CI/CD</strong>: Pipelines automatizados para despliegue seguro.onfigurables:</li>\n<li>Basic: 100 créditos</li>\n<li>Professional: 500 créditos (+10% bonus)</li>\n<li>Enterprise: 2000 créditos (+20% bonus)</li>\n</ul>\n<p>Uso:</p>\n<ul>\n<li>Tracking en tiempo real</li>\n<li>Expiración configurable</li>\n<li>Renovación automática (opcional)</li>\n</ul>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"plaintext\"><code><span class=\"line\"><span></span></span>\n<span class=\"line\"><span>## Integración con Otros Módulos</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>### Mailing (Postmark)</span></span>\n<span class=\"line\"><span>- Confirmación de pago</span></span>\n<span class=\"line\"><span>- Factura electrónica</span></span>\n<span class=\"line\"><span>- Alertas de saldo</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>### Notifications</span></span>\n<span class=\"line\"><span>- Notificaciones push</span></span>\n<span class=\"line\"><span>- Alertas en dashboard</span></span>\n<span class=\"line\"><span>- Reportes periódicos</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>### Users</span></span>\n<span class=\"line\"><span>- Historial de pagos</span></span>\n<span class=\"line\"><span>- Preferencias de facturación</span></span>\n<span class=\"line\"><span>- Métodos de pago guardados</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>## Manejo de Errores</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>Implementación robusta de error handling:</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>```typescript</span></span>\n<span class=\"line\"><span>- Pagos rechazados</span></span>\n<span class=\"line\"><span>- Timeouts de pasarela</span></span>\n<span class=\"line\"><span>- Webhooks duplicados</span></span>\n<span class=\"line\"><span>- Errores de red</span></span>\n<span class=\"line\"><span>- Validación de datos</span></span></code></pre>\n<p>Retry automático con backoff exponencial para fallos transitorios.</p>\n<h2 id=\"monitoreo-y-reporting\">Monitoreo y Reporting</h2>\n<h3 id=\"métricas-tracked\">Métricas Tracked</h3>\n<ul>\n<li>Tasa de éxito de pagos</li>\n<li>Tiempo promedio de procesamiento</li>\n<li>Monto total procesado</li>\n<li>Conversión por pasarela</li>\n<li>Errores y rechazos</li>\n</ul>\n<h3 id=\"dashboards\">Dashboards</h3>\n<ul>\n<li>Panel de administración</li>\n<li>Reportes por período</li>\n<li>Análisis por pasarela</li>\n<li>Tracking de créditos</li>\n<li>Alertas automáticas</li>\n</ul>\n<h2 id=\"testing\">Testing</h2>\n<p>Suite completa de tests:</p>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"typescript\"><code><span class=\"line\"><span style=\"color:#F97583\">-</span><span style=\"color:#E1E4E8\"> Unit tests para servicios</span></span>\n<span class=\"line\"><span style=\"color:#F97583\">-</span><span style=\"color:#E1E4E8\"> Integration tests para </span><span style=\"color:#B392F0\">pasarelas</span><span style=\"color:#E1E4E8\"> (sandbox)</span></span>\n<span class=\"line\"><span style=\"color:#F97583\">-</span><span style=\"color:#79B8FF\"> E2E</span><span style=\"color:#E1E4E8\"> tests para flujos completos</span></span>\n<span class=\"line\"><span style=\"color:#F97583\">-</span><span style=\"color:#E1E4E8\"> Mock de webhooks</span></span>\n<span class=\"line\"><span style=\"color:#F97583\">-</span><span style=\"color:#E1E4E8\"> Test de rollback transaccional</span></span></code></pre>\n<h2 id=\"resultados\">Resultados</h2>\n<ul>\n<li>✅ <strong>Miles de transacciones</strong> procesadas mensualmente</li>\n<li>✅ <strong>99.9% success rate</strong> en procesamiento</li>\n<li>✅ <strong>&#x3C;3s</strong> tiempo promedio de respuesta</li>\n<li>✅ <strong>Zero data loss</strong> con transacciones ACID</li>\n<li>✅ <strong>Facturación automática</strong> 100% confiable</li>\n<li>✅ <strong>Multi-currency</strong> support (PEN, USD)</li>\n</ul>\n<h2 id=\"desafíos-superados\">Desafíos Superados</h2>\n<ol>\n<li><strong>Reconciliación de pagos</strong>: Sistema automático de matching entre webhooks y órdenes</li>\n<li><strong>Idempotencia</strong>: Prevención de cargos duplicados</li>\n<li><strong>Failover</strong>: Cambio automático de pasarela en caso de falla</li>\n<li><strong>Compliance</strong>: Cumplimiento de regulaciones PCI-DSS</li>\n</ol>\n<p>Este módulo es crítico para el negocio, procesando el 100% de los ingresos de la plataforma con alta confiabilidad y seguridad.</p>",
+      "metadata": {
+        "headings": [
+          {
+            "depth": 2,
+            "slug": "sobre-el-proyecto",
+            "text": "Sobre el Proyecto"
+          },
+          {
+            "depth": 2,
+            "slug": "stack-tecnológico",
+            "text": "Stack Tecnológico"
+          },
+          {
+            "depth": 3,
+            "slug": "backend-nestjs",
+            "text": "Backend (NestJS)"
+          },
+          {
+            "depth": 2,
+            "slug": "integraciones-clave",
+            "text": "Integraciones Clave"
+          },
+          {
+            "depth": 3,
+            "slug": "pasarelas-de-pago",
+            "text": "Pasarelas de Pago"
+          },
+          {
+            "depth": 2,
+            "slug": "características-principales",
+            "text": "Características Principales"
+          },
+          {
+            "depth": 2,
+            "slug": "infraestructura",
+            "text": "Infraestructura"
+          },
+          {
+            "depth": 2,
+            "slug": "monitoreo-y-reporting",
+            "text": "Monitoreo y Reporting"
+          },
+          {
+            "depth": 3,
+            "slug": "métricas-tracked",
+            "text": "Métricas Tracked"
+          },
+          {
+            "depth": 3,
+            "slug": "dashboards",
+            "text": "Dashboards"
+          },
+          {
+            "depth": 2,
+            "slug": "testing",
+            "text": "Testing"
+          },
+          {
+            "depth": 2,
+            "slug": "resultados",
+            "text": "Resultados"
+          },
+          {
+            "depth": 2,
+            "slug": "desafíos-superados",
+            "text": "Desafíos Superados"
+          }
+        ],
+        "localImagePaths": [],
+        "remoteImagePaths": [],
+        "frontmatter": {
+          "title": "SmartPay Integration Service",
+          "publishDate": "2025-12-01T00:00:00.000Z",
+          "img": "/assets/smartpay/payment-orchestration.png",
+          "img_alt": "Diagrama de arquitectura del servicio de orquestación de pagos conectando con Culqi y MercadoPago",
+          "description": "Microservicio backend especializado en el procesamiento de pagos, integrando pasarelas como Culqi y MercadoPago.\n",
+          "tags": [
+            "NestJS",
+            "Culqi",
+            "MercadoPago",
+            "Swagger",
+            "MikroORM"
+          ],
+          "featured": true,
+          "visible": true
+        },
+        "imagePaths": []
+      }
+    },
+    "collection": "work"
+  },
+  {
+    "id": "docker-cloud-infrastructure",
+    "data": {
+      "title": "Docker & Cloud Infrastructure",
+      "description": "Diseño e implementación de infraestructura completa con Docker Compose, Cloudflare Tunnels y despliegue multi-ambiente.\n",
+      "publishDate": "2023-01-15T00:00:00.000Z",
+      "tags": [
+        "Docker",
+        "DevOps",
+        "Cloudflare",
+        "AWS",
+        "Infrastructure"
+      ],
+      "img": "/assets/docker-infrastructure.jpg",
+      "img_alt": "Infraestructura Docker mostrando contenedores y arquitectura de microservicios"
+    },
+    "body": "## Sobre el Proyecto\n\nInfraestructura cloud completa diseñada desde cero para soportar múltiples servicios con alta disponibilidad, seguridad y escalabilidad. Implementación de arquitectura de microservicios con Docker y acceso público mediante Cloudflare Tunnels.\n\n## Stack Tecnológico\n\n- **Docker & Docker Compose** - Orquestación de contenedores\n- **Cloudflare Tunnels** - Acceso público seguro sin exponer puertos\n- **AWS AppRunner** - Despliegue de backend NestJS\n- **AWS Amplify** - Hosting de frontend SvelteKit\n- **Linux** - Servidor Ubuntu/Debian\n- **Nginx** - Reverse proxy y static files\n- **MySQL** - Base de datos en contenedor\n\n## Arquitectura\n\n### Red Docker Personalizada\n```yaml\nRed: 172.27.0.0/16\nGateway: 172.27.0.1\n\nServicios con IPs estáticas:\n- Backend (NestJS): 172.27.0.26\n- Frontend (SvelteKit): 172.27.0.28\n- MySQL: 172.27.0.24\n- n8n: 172.27.0.32\n- Portfolio (Astro): 172.27.0.30\n```\n\n### Cloudflare Tunnel\nImplementación de túnel persistente para exposición segura:\n\n```bash\nTunnel ID: 89b4b089-2935-4d15-84be-0d7e734531e6\nDomain: aaronccenta.site\n\nEndpoints públicos:\n- https://aaronccenta.site → Portfolio\n- https://app.aaronccenta.site → Frontend\n- https://backendlite.aaronccenta.site → API\n- https://n8n.aaronccenta.site → Workflows\n- ssh.aaronccenta.site → SSH Access (TCP)\n```\n\n### Docker Compose\nOrquestación de 5 servicios principales:\n\n1. **Backend (NestJS)**\n   - Hot reload para desarrollo\n   - Volúmenes cached para mejor performance\n   - Dependencias gestionadas automáticamente\n\n2. **Frontend (SvelteKit)**\n   - Puerto 5173 expuesto\n   - Node modules excluidos del bind mount\n   - Build optimizado para producción\n\n3. **MySQL**\n   - Configuración personalizada (my.cnf)\n   - Scripts de inicialización automáticos\n   - Volúmenes persistentes\n\n4. **n8n**\n   - Variables de entorno para workflows\n   - Integración con backend vía API\n   - Persistencia de datos\n\n5. **Portfolio (Astro)**\n   - Sitio estático con SSR\n   - Multi-idioma (es/en)\n   - Hot reload habilitado\n\n## Características\n\n### Multi-Ambiente\nSistema de variables de entorno para gestión de múltiples ambientes:\n\n```bash\n.env configuración:\n- DB_ENV=development|production\n- SUBNET=172.27.0.0/16\n- GATEWAY=172.27.0.1\n- Configuración específica por ambiente\n```\n\n### Seguridad\n- SSL/TLS automático vía Cloudflare\n- Credenciales gestionadas por variables de entorno\n- Firewall configurado (solo Cloudflare ingress)\n- Túnel SSH para acceso remoto seguro\n- Contenedores aislados en red privada\n\n### Monitoreo\n- Logs centralizados con `docker compose logs`\n- Health checks para cada servicio\n- Restart automático en caso de falla\n\n### Documentación\nArchivo `CLAUDE.md` completo con:\n- Guía de comandos comunes\n- Arquitectura detallada\n- Configuración de Cloudflare\n- Endpoints de testing\n- Flujos de desarrollo\n\n## Deployment Workflow\n\n```bash\n# Desarrollo local\ndocker compose up -d\n\n# Ver logs en tiempo real\ndocker compose logs -f [service]\n\n# Rebuild después de cambios\ndocker compose up -d --build\n\n# Acceso público vía Cloudflare\ncloudflared tunnel run integrador-tunnel\n```\n\n## Resultados\n\n- ✅ **Zero downtime** con restart automático\n- ✅ **Escalabilidad horizontal** lista para implementar\n- ✅ **Seguridad enterprise** con Cloudflare\n- ✅ **Development parity** entre local y producción\n- ✅ **Documentación completa** para el equipo\n- ✅ **CI/CD ready** para automatización\n\n## Aprendizajes\n\nEste proyecto consolidó mi experiencia en:\n- Arquitectura de microservicios\n- DevOps y automatización\n- Networking y DNS\n- Cloud infrastructure\n- Seguridad y mejores prácticas\n\nLa infraestructura soporta actualmente múltiples proyectos en producción con alta disponibilidad y zero-downtime deployments.",
+    "filePath": "src/content/work/docker-cloud-infrastructure.md",
+    "digest": "dab5ccba908238c6",
+    "rendered": {
+      "html": "<h2 id=\"sobre-el-proyecto\">Sobre el Proyecto</h2>\n<p>Infraestructura cloud completa diseñada desde cero para soportar múltiples servicios con alta disponibilidad, seguridad y escalabilidad. Implementación de arquitectura de microservicios con Docker y acceso público mediante Cloudflare Tunnels.</p>\n<h2 id=\"stack-tecnológico\">Stack Tecnológico</h2>\n<ul>\n<li><strong>Docker &#x26; Docker Compose</strong> - Orquestación de contenedores</li>\n<li><strong>Cloudflare Tunnels</strong> - Acceso público seguro sin exponer puertos</li>\n<li><strong>AWS AppRunner</strong> - Despliegue de backend NestJS</li>\n<li><strong>AWS Amplify</strong> - Hosting de frontend SvelteKit</li>\n<li><strong>Linux</strong> - Servidor Ubuntu/Debian</li>\n<li><strong>Nginx</strong> - Reverse proxy y static files</li>\n<li><strong>MySQL</strong> - Base de datos en contenedor</li>\n</ul>\n<h2 id=\"arquitectura\">Arquitectura</h2>\n<h3 id=\"red-docker-personalizada\">Red Docker Personalizada</h3>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"yaml\"><code><span class=\"line\"><span style=\"color:#85E89D\">Red</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#9ECBFF\">172.27.0.0/16</span></span>\n<span class=\"line\"><span style=\"color:#85E89D\">Gateway</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#79B8FF\">172.27.0.1</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#85E89D\">Servicios con IPs estáticas</span><span style=\"color:#E1E4E8\">:</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">- </span><span style=\"color:#85E89D\">Backend (NestJS)</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#79B8FF\">172.27.0.26</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">- </span><span style=\"color:#85E89D\">Frontend (SvelteKit)</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#79B8FF\">172.27.0.28</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">- </span><span style=\"color:#85E89D\">MySQL</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#79B8FF\">172.27.0.24</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">- </span><span style=\"color:#85E89D\">n8n</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#79B8FF\">172.27.0.32</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">- </span><span style=\"color:#85E89D\">Portfolio (Astro)</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#79B8FF\">172.27.0.30</span></span></code></pre>\n<h3 id=\"cloudflare-tunnel\">Cloudflare Tunnel</h3>\n<p>Implementación de túnel persistente para exposición segura:</p>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"bash\"><code><span class=\"line\"><span style=\"color:#B392F0\">Tunnel</span><span style=\"color:#9ECBFF\"> ID:</span><span style=\"color:#9ECBFF\"> 89b4b089-2935-4d15-84be-0d7e734531e6</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">Domain:</span><span style=\"color:#9ECBFF\"> aaronccenta.site</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#B392F0\">Endpoints</span><span style=\"color:#9ECBFF\"> públicos:</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">-</span><span style=\"color:#9ECBFF\"> https://aaronccenta.site</span><span style=\"color:#9ECBFF\"> →</span><span style=\"color:#9ECBFF\"> Portfolio</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">-</span><span style=\"color:#9ECBFF\"> https://app.aaronccenta.site</span><span style=\"color:#9ECBFF\"> →</span><span style=\"color:#9ECBFF\"> Frontend</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">-</span><span style=\"color:#9ECBFF\"> https://backendlite.aaronccenta.site</span><span style=\"color:#9ECBFF\"> →</span><span style=\"color:#9ECBFF\"> API</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">-</span><span style=\"color:#9ECBFF\"> https://n8n.aaronccenta.site</span><span style=\"color:#9ECBFF\"> →</span><span style=\"color:#9ECBFF\"> Workflows</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">-</span><span style=\"color:#9ECBFF\"> ssh.aaronccenta.site</span><span style=\"color:#9ECBFF\"> →</span><span style=\"color:#9ECBFF\"> SSH</span><span style=\"color:#9ECBFF\"> Access</span><span style=\"color:#E1E4E8\"> (TCP)</span></span></code></pre>\n<h3 id=\"docker-compose\">Docker Compose</h3>\n<p>Orquestación de 5 servicios principales:</p>\n<ol>\n<li>\n<p><strong>Backend (NestJS)</strong></p>\n<ul>\n<li>Hot reload para desarrollo</li>\n<li>Volúmenes cached para mejor performance</li>\n<li>Dependencias gestionadas automáticamente</li>\n</ul>\n</li>\n<li>\n<p><strong>Frontend (SvelteKit)</strong></p>\n<ul>\n<li>Puerto 5173 expuesto</li>\n<li>Node modules excluidos del bind mount</li>\n<li>Build optimizado para producción</li>\n</ul>\n</li>\n<li>\n<p><strong>MySQL</strong></p>\n<ul>\n<li>Configuración personalizada (my.cnf)</li>\n<li>Scripts de inicialización automáticos</li>\n<li>Volúmenes persistentes</li>\n</ul>\n</li>\n<li>\n<p><strong>n8n</strong></p>\n<ul>\n<li>Variables de entorno para workflows</li>\n<li>Integración con backend vía API</li>\n<li>Persistencia de datos</li>\n</ul>\n</li>\n<li>\n<p><strong>Portfolio (Astro)</strong></p>\n<ul>\n<li>Sitio estático con SSR</li>\n<li>Multi-idioma (es/en)</li>\n<li>Hot reload habilitado</li>\n</ul>\n</li>\n</ol>\n<h2 id=\"características\">Características</h2>\n<h3 id=\"multi-ambiente\">Multi-Ambiente</h3>\n<p>Sistema de variables de entorno para gestión de múltiples ambientes:</p>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"bash\"><code><span class=\"line\"><span style=\"color:#B392F0\">.env</span><span style=\"color:#9ECBFF\"> configuración:</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">-</span><span style=\"color:#9ECBFF\"> DB_ENV=development</span><span style=\"color:#F97583\">|</span><span style=\"color:#B392F0\">production</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">-</span><span style=\"color:#9ECBFF\"> SUBNET=172.27.0.0/16</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">-</span><span style=\"color:#9ECBFF\"> GATEWAY=</span><span style=\"color:#79B8FF\">172.27.0.1</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">-</span><span style=\"color:#9ECBFF\"> Configuración</span><span style=\"color:#9ECBFF\"> específica</span><span style=\"color:#9ECBFF\"> por</span><span style=\"color:#9ECBFF\"> ambiente</span></span></code></pre>\n<h3 id=\"seguridad\">Seguridad</h3>\n<ul>\n<li>SSL/TLS automático vía Cloudflare</li>\n<li>Credenciales gestionadas por variables de entorno</li>\n<li>Firewall configurado (solo Cloudflare ingress)</li>\n<li>Túnel SSH para acceso remoto seguro</li>\n<li>Contenedores aislados en red privada</li>\n</ul>\n<h3 id=\"monitoreo\">Monitoreo</h3>\n<ul>\n<li>Logs centralizados con <code>docker compose logs</code></li>\n<li>Health checks para cada servicio</li>\n<li>Restart automático en caso de falla</li>\n</ul>\n<h3 id=\"documentación\">Documentación</h3>\n<p>Archivo <code>CLAUDE.md</code> completo con:</p>\n<ul>\n<li>Guía de comandos comunes</li>\n<li>Arquitectura detallada</li>\n<li>Configuración de Cloudflare</li>\n<li>Endpoints de testing</li>\n<li>Flujos de desarrollo</li>\n</ul>\n<h2 id=\"deployment-workflow\">Deployment Workflow</h2>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"bash\"><code><span class=\"line\"><span style=\"color:#6A737D\"># Desarrollo local</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">docker</span><span style=\"color:#9ECBFF\"> compose</span><span style=\"color:#9ECBFF\"> up</span><span style=\"color:#79B8FF\"> -d</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#6A737D\"># Ver logs en tiempo real</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">docker</span><span style=\"color:#9ECBFF\"> compose</span><span style=\"color:#9ECBFF\"> logs</span><span style=\"color:#79B8FF\"> -f</span><span style=\"color:#E1E4E8\"> [service]</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#6A737D\"># Rebuild después de cambios</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">docker</span><span style=\"color:#9ECBFF\"> compose</span><span style=\"color:#9ECBFF\"> up</span><span style=\"color:#79B8FF\"> -d</span><span style=\"color:#79B8FF\"> --build</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#6A737D\"># Acceso público vía Cloudflare</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">cloudflared</span><span style=\"color:#9ECBFF\"> tunnel</span><span style=\"color:#9ECBFF\"> run</span><span style=\"color:#9ECBFF\"> integrador-tunnel</span></span></code></pre>\n<h2 id=\"resultados\">Resultados</h2>\n<ul>\n<li>✅ <strong>Zero downtime</strong> con restart automático</li>\n<li>✅ <strong>Escalabilidad horizontal</strong> lista para implementar</li>\n<li>✅ <strong>Seguridad enterprise</strong> con Cloudflare</li>\n<li>✅ <strong>Development parity</strong> entre local y producción</li>\n<li>✅ <strong>Documentación completa</strong> para el equipo</li>\n<li>✅ <strong>CI/CD ready</strong> para automatización</li>\n</ul>\n<h2 id=\"aprendizajes\">Aprendizajes</h2>\n<p>Este proyecto consolidó mi experiencia en:</p>\n<ul>\n<li>Arquitectura de microservicios</li>\n<li>DevOps y automatización</li>\n<li>Networking y DNS</li>\n<li>Cloud infrastructure</li>\n<li>Seguridad y mejores prácticas</li>\n</ul>\n<p>La infraestructura soporta actualmente múltiples proyectos en producción con alta disponibilidad y zero-downtime deployments.</p>",
+      "metadata": {
+        "headings": [
+          {
+            "depth": 2,
+            "slug": "sobre-el-proyecto",
+            "text": "Sobre el Proyecto"
+          },
+          {
+            "depth": 2,
+            "slug": "stack-tecnológico",
+            "text": "Stack Tecnológico"
+          },
+          {
+            "depth": 2,
+            "slug": "arquitectura",
+            "text": "Arquitectura"
+          },
+          {
+            "depth": 3,
+            "slug": "red-docker-personalizada",
+            "text": "Red Docker Personalizada"
+          },
+          {
+            "depth": 3,
+            "slug": "cloudflare-tunnel",
+            "text": "Cloudflare Tunnel"
+          },
+          {
+            "depth": 3,
+            "slug": "docker-compose",
+            "text": "Docker Compose"
+          },
+          {
+            "depth": 2,
+            "slug": "características",
+            "text": "Características"
+          },
+          {
+            "depth": 3,
+            "slug": "multi-ambiente",
+            "text": "Multi-Ambiente"
+          },
+          {
+            "depth": 3,
+            "slug": "seguridad",
+            "text": "Seguridad"
+          },
+          {
+            "depth": 3,
+            "slug": "monitoreo",
+            "text": "Monitoreo"
+          },
+          {
+            "depth": 3,
+            "slug": "documentación",
+            "text": "Documentación"
+          },
+          {
+            "depth": 2,
+            "slug": "deployment-workflow",
+            "text": "Deployment Workflow"
+          },
+          {
+            "depth": 2,
+            "slug": "resultados",
+            "text": "Resultados"
+          },
+          {
+            "depth": 2,
+            "slug": "aprendizajes",
+            "text": "Aprendizajes"
+          }
+        ],
+        "localImagePaths": [],
+        "remoteImagePaths": [],
+        "frontmatter": {
+          "title": "Docker & Cloud Infrastructure",
+          "publishDate": "2023-01-15T00:00:00.000Z",
+          "img": "/assets/docker-infrastructure.jpg",
+          "img_alt": "Infraestructura Docker mostrando contenedores y arquitectura de microservicios",
+          "description": "Diseño e implementación de infraestructura completa con Docker Compose, Cloudflare Tunnels y despliegue multi-ambiente.\n",
+          "tags": [
+            "Docker",
+            "DevOps",
+            "Cloudflare",
+            "AWS",
+            "Infrastructure"
+          ],
+          "featured": false,
+          "visible": true
+        },
+        "imagePaths": []
+      }
+    },
+    "collection": "work"
+  },
+  {
+    "id": "n8n-automation-workflows",
+    "data": {
+      "title": "n8n Workflow Automation",
+      "description": "Automatización empresarial con n8n integrado al backend NestJS para procesamiento automático de evaluaciones y notificaciones.\n",
+      "publishDate": "2023-02-10T00:00:00.000Z",
+      "tags": [
+        "n8n",
+        "Automation",
+        "Integration",
+        "Workflows"
+      ],
+      "img": "/assets/n8n-workflows.jpg",
+      "img_alt": "Panel de n8n mostrando workflows automatizados conectados al backend NestJS"
+    },
+    "body": "## Sobre el Proyecto\n\nSistema de automatización empresarial usando n8n conectado directamente al backend NestJS vía REST API. Automatiza procesos críticos del negocio como procesamiento de evaluaciones, envío de notificaciones y sincronización con sistemas externos.\n\n## Stack Tecnológico\n\n- **n8n** - Plataforma de workflow automation\n- **NestJS API** - Backend para ejecución de lógica de negocio\n- **MySQL** - Base de datos compartida con backend\n- **Docker** - Containerización y networking\n- **Webhooks** - Triggers externos\n\n## Arquitectura\n\n### Integración con Backend\n\n```yaml\nn8n Container:\n  IP: 172.27.0.32:5678\n  Networking: Red Docker privada\n\nVariables de entorno configuradas:\n  - BACKEND_BASE_URL: http://172.27.0.26:9592/api/v1\n  - MYSQL_HOST: 172.27.0.24\n  - ENV: local|development|production\n\nAutenticación:\n  - Basic Auth habilitado\n  - Credenciales en variables de entorno\n```\n\n### Workflows Principales\n\n**1. Procesamiento de Evaluaciones**\n```\nTrigger: Webhook de frontend\n↓\nValidar datos del candidato\n↓\nLlamar API: POST /api/v1/psychometric-test/start\n↓\nEnviar email de bienvenida (Postmark)\n↓\nRegistrar en MySQL\n↓\nNotificación a administradores\n```\n\n**2. Gestión de Créditos**\n```\nTrigger: Cron job (diario)\n↓\nConsultar API: GET /api/v1/credits/low-balance\n↓\nFiltrar clientes con <10 créditos\n↓\nEnviar alertas por email\n↓\nCrear notificación in-app\n↓\nLog en base de datos\n```\n\n**3. Sincronización con Legacy Systems**\n```\nTrigger: Webhook de pago confirmado\n↓\nObtener datos: GET /api/v1/payments/{id}\n↓\nTransformar formato\n↓\nHTTP Request a SmartPay API\n↓\nActualizar estado: PATCH /api/v1/payments/{id}\n↓\nEnviar factura por email\n```\n\n**4. Reportes Automáticos**\n```\nTrigger: Cron (fin de mes)\n↓\nQuery MySQL: Métricas del período\n↓\nProcesar datos con JavaScript\n↓\nGenerar reporte PDF\n↓\nEnviar a stakeholders\n↓\nArchivar en storage\n```\n\n## Nodos Más Utilizados\n\n### HTTP Request\nConexión con backend NestJS:\n```javascript\nMethod: POST/GET/PATCH\nURL: {{ $env.BACKEND_BASE_URL }}/endpoint\nAuthentication: Bearer Token\nHeaders: Content-Type: application/json\n```\n\n### MySQL\nConsultas directas a base de datos:\n```sql\n-- Obtener evaluaciones pendientes\nSELECT * FROM psychometric_test\nWHERE status = 'pending'\nAND created_at > DATE_SUB(NOW(), INTERVAL 24 HOUR);\n```\n\n### Email (Postmark)\nEnvío de emails transaccionales:\n- Confirmaciones de pago\n- Resultados de evaluaciones\n- Alertas administrativas\n- Reportes periódicos\n\n### Webhook\nRecepción de eventos externos:\n- Confirmación de pagos\n- Eventos de frontend\n- Triggers de sistemas legacy\n- Notificaciones de terceros\n\n## Variables de Entorno\n\nConfiguración dinámica por ambiente:\n\n```bash\n# Workflow Environment\nN8N_WORKFLOW_ENV=local|development|production\n\n# Backend URLs\nBACKEND_BASE_URL=http://172.27.0.26:9592/api/v1\n\n# MySQL Access\nMYSQL_HOST=172.27.0.24\nMYSQL_DATABASE=my_database\nMYSQL_USER=root\nMYSQL_PASSWORD=***\n```\n\n## Workflows de Negocio\n\n### Onboarding de Clientes\n1. Cliente se registra en frontend\n2. Webhook dispara workflow n8n\n3. Crear usuario en backend (API call)\n4. Enviar email de bienvenida\n5. Asignar créditos promocionales\n6. Notificar a equipo de ventas\n\n### Procesamiento de Evaluaciones\n1. Candidato completa test\n2. Webhook con resultados\n3. Calcular score (lógica en backend)\n4. Descontar crédito del cliente\n5. Generar PDF de resultados\n6. Enviar a RRHH del cliente\n7. Actualizar dashboard en tiempo real\n\n### Monitoreo de Sistema\n1. Cron job cada hora\n2. Health check de servicios\n3. Query de métricas en MySQL\n4. Detección de anomalías\n5. Alertas si hay problemas\n6. Log para auditoría\n\n## Ventajas de n8n\n\n### Low-Code Automation\n- Visual workflow builder\n- Sin necesidad de desplegar código\n- Cambios en caliente\n- Testing integrado\n\n### Flexibilidad\n- Code nodes con JavaScript\n- HTTP requests ilimitados\n- Conexión directa a MySQL\n- Integración con 200+ apps\n\n### Observabilidad\n- Logs detallados de ejecución\n- Historial completo\n- Error handling visual\n- Retry automático\n\n## Seguridad\n\n- **Credenciales encriptadas** en n8n\n- **Variables de entorno** para secrets\n- **Red Docker privada** sin exposición\n- **Basic Auth** habilitado\n- **HTTPS** vía Cloudflare Tunnel\n\n## Despliegue\n\n### Docker Compose\n```yaml\nn8n:\n  image: n8nio/n8n:latest\n  ports:\n    - \"5678:5678\"\n  environment:\n    - N8N_BASIC_AUTH_ACTIVE=true\n    - ENV=${N8N_WORKFLOW_ENV}\n    - BACKEND_BASE_URL=${N8N_BACKEND_BASE_URL}\n  volumes:\n    - n8n_data:/home/node/.n8n\n  networks:\n    - my_network\n```\n\n### Acceso Público\n```\nhttps://n8n.aaronccenta.site\n↓\nCloudflare Tunnel\n↓\nn8n:5678 (Docker)\n```\n\n## Resultados\n\n- ✅ **20+ workflows** activos en producción\n- ✅ **Miles de ejecuciones** mensuales\n- ✅ **99% success rate** en automatizaciones\n- ✅ **Ahorro de 10+ horas/semana** en tareas manuales\n- ✅ **Zero code deployments** para nuevos workflows\n- ✅ **Integración perfecta** con backend NestJS\n\n## Casos de Uso\n\n1. **Envío masivo de evaluaciones** programadas\n2. **Sincronización automática** con CRM\n3. **Reportes personalizados** para clientes\n4. **Backup automático** de datos críticos\n5. **Monitoreo y alertas** proactivas\n6. **Migración de datos** entre sistemas\n\nEste sistema de automatización ha transformado operaciones manuales en procesos automáticos confiables, permitiendo al equipo enfocarse en tareas de alto valor.",
+    "filePath": "src/content/work/n8n-automation-workflows.md",
+    "digest": "31484ed3331b8588",
+    "rendered": {
+      "html": "<h2 id=\"sobre-el-proyecto\">Sobre el Proyecto</h2>\n<p>Sistema de automatización empresarial usando n8n conectado directamente al backend NestJS vía REST API. Automatiza procesos críticos del negocio como procesamiento de evaluaciones, envío de notificaciones y sincronización con sistemas externos.</p>\n<h2 id=\"stack-tecnológico\">Stack Tecnológico</h2>\n<ul>\n<li><strong>n8n</strong> - Plataforma de workflow automation</li>\n<li><strong>NestJS API</strong> - Backend para ejecución de lógica de negocio</li>\n<li><strong>MySQL</strong> - Base de datos compartida con backend</li>\n<li><strong>Docker</strong> - Containerización y networking</li>\n<li><strong>Webhooks</strong> - Triggers externos</li>\n</ul>\n<h2 id=\"arquitectura\">Arquitectura</h2>\n<h3 id=\"integración-con-backend\">Integración con Backend</h3>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"yaml\"><code><span class=\"line\"><span style=\"color:#85E89D\">n8n Container</span><span style=\"color:#E1E4E8\">:</span></span>\n<span class=\"line\"><span style=\"color:#85E89D\">  IP</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#9ECBFF\">172.27.0.32:5678</span></span>\n<span class=\"line\"><span style=\"color:#85E89D\">  Networking</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#9ECBFF\">Red Docker privada</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#85E89D\">Variables de entorno configuradas</span><span style=\"color:#E1E4E8\">:</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">  - </span><span style=\"color:#85E89D\">BACKEND_BASE_URL</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#9ECBFF\">http://172.27.0.26:9592/api/v1</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">  - </span><span style=\"color:#85E89D\">MYSQL_HOST</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#79B8FF\">172.27.0.24</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">  - </span><span style=\"color:#85E89D\">ENV</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#9ECBFF\">local|development|production</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#85E89D\">Autenticación</span><span style=\"color:#E1E4E8\">:</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">  - </span><span style=\"color:#9ECBFF\">Basic Auth habilitado</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">  - </span><span style=\"color:#9ECBFF\">Credenciales en variables de entorno</span></span></code></pre>\n<h3 id=\"workflows-principales\">Workflows Principales</h3>\n<p><strong>1. Procesamiento de Evaluaciones</strong></p>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"plaintext\"><code><span class=\"line\"><span>Trigger: Webhook de frontend</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Validar datos del candidato</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Llamar API: POST /api/v1/psychometric-test/start</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Enviar email de bienvenida (Postmark)</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Registrar en MySQL</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Notificación a administradores</span></span></code></pre>\n<p><strong>2. Gestión de Créditos</strong></p>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"plaintext\"><code><span class=\"line\"><span>Trigger: Cron job (diario)</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Consultar API: GET /api/v1/credits/low-balance</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Filtrar clientes con &#x3C;10 créditos</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Enviar alertas por email</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Crear notificación in-app</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Log en base de datos</span></span></code></pre>\n<p><strong>3. Sincronización con Legacy Systems</strong></p>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"plaintext\"><code><span class=\"line\"><span>Trigger: Webhook de pago confirmado</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Obtener datos: GET /api/v1/payments/{id}</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Transformar formato</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>HTTP Request a SmartPay API</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Actualizar estado: PATCH /api/v1/payments/{id}</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Enviar factura por email</span></span></code></pre>\n<p><strong>4. Reportes Automáticos</strong></p>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"plaintext\"><code><span class=\"line\"><span>Trigger: Cron (fin de mes)</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Query MySQL: Métricas del período</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Procesar datos con JavaScript</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Generar reporte PDF</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Enviar a stakeholders</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Archivar en storage</span></span></code></pre>\n<h2 id=\"nodos-más-utilizados\">Nodos Más Utilizados</h2>\n<h3 id=\"http-request\">HTTP Request</h3>\n<p>Conexión con backend NestJS:</p>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"javascript\"><code><span class=\"line\"><span style=\"color:#B392F0\">Method</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#79B8FF\">POST</span><span style=\"color:#F97583\">/</span><span style=\"color:#79B8FF\">GET</span><span style=\"color:#F97583\">/</span><span style=\"color:#79B8FF\">PATCH</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">URL</span><span style=\"color:#E1E4E8\">: {{ $env.</span><span style=\"color:#79B8FF\">BACKEND_BASE_URL</span><span style=\"color:#E1E4E8\"> }}</span><span style=\"color:#F97583\">/</span><span style=\"color:#E1E4E8\">endpoint</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">Authentication</span><span style=\"color:#E1E4E8\">: Bearer Token</span></span>\n<span class=\"line\"><span style=\"color:#B392F0\">Headers</span><span style=\"color:#E1E4E8\">: Content</span><span style=\"color:#F97583\">-</span><span style=\"color:#B392F0\">Type</span><span style=\"color:#E1E4E8\">: application</span><span style=\"color:#F97583\">/</span><span style=\"color:#E1E4E8\">json</span></span></code></pre>\n<h3 id=\"mysql\">MySQL</h3>\n<p>Consultas directas a base de datos:</p>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"sql\"><code><span class=\"line\"><span style=\"color:#6A737D\">-- Obtener evaluaciones pendientes</span></span>\n<span class=\"line\"><span style=\"color:#F97583\">SELECT</span><span style=\"color:#F97583\"> *</span><span style=\"color:#F97583\"> FROM</span><span style=\"color:#E1E4E8\"> psychometric_test</span></span>\n<span class=\"line\"><span style=\"color:#F97583\">WHERE</span><span style=\"color:#F97583\"> status</span><span style=\"color:#F97583\"> =</span><span style=\"color:#9ECBFF\"> 'pending'</span></span>\n<span class=\"line\"><span style=\"color:#F97583\">AND</span><span style=\"color:#E1E4E8\"> created_at </span><span style=\"color:#F97583\">></span><span style=\"color:#E1E4E8\"> DATE_SUB(</span><span style=\"color:#F97583\">NOW</span><span style=\"color:#E1E4E8\">(), INTERVAL </span><span style=\"color:#79B8FF\">24</span><span style=\"color:#F97583\"> HOUR</span><span style=\"color:#E1E4E8\">);</span></span></code></pre>\n<h3 id=\"email-postmark\">Email (Postmark)</h3>\n<p>Envío de emails transaccionales:</p>\n<ul>\n<li>Confirmaciones de pago</li>\n<li>Resultados de evaluaciones</li>\n<li>Alertas administrativas</li>\n<li>Reportes periódicos</li>\n</ul>\n<h3 id=\"webhook\">Webhook</h3>\n<p>Recepción de eventos externos:</p>\n<ul>\n<li>Confirmación de pagos</li>\n<li>Eventos de frontend</li>\n<li>Triggers de sistemas legacy</li>\n<li>Notificaciones de terceros</li>\n</ul>\n<h2 id=\"variables-de-entorno\">Variables de Entorno</h2>\n<p>Configuración dinámica por ambiente:</p>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"bash\"><code><span class=\"line\"><span style=\"color:#6A737D\"># Workflow Environment</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">N8N_WORKFLOW_ENV</span><span style=\"color:#F97583\">=</span><span style=\"color:#9ECBFF\">local</span><span style=\"color:#F97583\">|</span><span style=\"color:#B392F0\">development</span><span style=\"color:#F97583\">|</span><span style=\"color:#B392F0\">production</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#6A737D\"># Backend URLs</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">BACKEND_BASE_URL</span><span style=\"color:#F97583\">=</span><span style=\"color:#9ECBFF\">http://172.27.0.26:9592/api/v1</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#6A737D\"># MySQL Access</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">MYSQL_HOST</span><span style=\"color:#F97583\">=</span><span style=\"color:#9ECBFF\">172.27.0.24</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">MYSQL_DATABASE</span><span style=\"color:#F97583\">=</span><span style=\"color:#9ECBFF\">my_database</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">MYSQL_USER</span><span style=\"color:#F97583\">=</span><span style=\"color:#9ECBFF\">root</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">MYSQL_PASSWORD</span><span style=\"color:#F97583\">=</span><span style=\"color:#9ECBFF\">***</span></span></code></pre>\n<h2 id=\"workflows-de-negocio\">Workflows de Negocio</h2>\n<h3 id=\"onboarding-de-clientes\">Onboarding de Clientes</h3>\n<ol>\n<li>Cliente se registra en frontend</li>\n<li>Webhook dispara workflow n8n</li>\n<li>Crear usuario en backend (API call)</li>\n<li>Enviar email de bienvenida</li>\n<li>Asignar créditos promocionales</li>\n<li>Notificar a equipo de ventas</li>\n</ol>\n<h3 id=\"procesamiento-de-evaluaciones\">Procesamiento de Evaluaciones</h3>\n<ol>\n<li>Candidato completa test</li>\n<li>Webhook con resultados</li>\n<li>Calcular score (lógica en backend)</li>\n<li>Descontar crédito del cliente</li>\n<li>Generar PDF de resultados</li>\n<li>Enviar a RRHH del cliente</li>\n<li>Actualizar dashboard en tiempo real</li>\n</ol>\n<h3 id=\"monitoreo-de-sistema\">Monitoreo de Sistema</h3>\n<ol>\n<li>Cron job cada hora</li>\n<li>Health check de servicios</li>\n<li>Query de métricas en MySQL</li>\n<li>Detección de anomalías</li>\n<li>Alertas si hay problemas</li>\n<li>Log para auditoría</li>\n</ol>\n<h2 id=\"ventajas-de-n8n\">Ventajas de n8n</h2>\n<h3 id=\"low-code-automation\">Low-Code Automation</h3>\n<ul>\n<li>Visual workflow builder</li>\n<li>Sin necesidad de desplegar código</li>\n<li>Cambios en caliente</li>\n<li>Testing integrado</li>\n</ul>\n<h3 id=\"flexibilidad\">Flexibilidad</h3>\n<ul>\n<li>Code nodes con JavaScript</li>\n<li>HTTP requests ilimitados</li>\n<li>Conexión directa a MySQL</li>\n<li>Integración con 200+ apps</li>\n</ul>\n<h3 id=\"observabilidad\">Observabilidad</h3>\n<ul>\n<li>Logs detallados de ejecución</li>\n<li>Historial completo</li>\n<li>Error handling visual</li>\n<li>Retry automático</li>\n</ul>\n<h2 id=\"seguridad\">Seguridad</h2>\n<ul>\n<li><strong>Credenciales encriptadas</strong> en n8n</li>\n<li><strong>Variables de entorno</strong> para secrets</li>\n<li><strong>Red Docker privada</strong> sin exposición</li>\n<li><strong>Basic Auth</strong> habilitado</li>\n<li><strong>HTTPS</strong> vía Cloudflare Tunnel</li>\n</ul>\n<h2 id=\"despliegue\">Despliegue</h2>\n<h3 id=\"docker-compose\">Docker Compose</h3>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"yaml\"><code><span class=\"line\"><span style=\"color:#85E89D\">n8n</span><span style=\"color:#E1E4E8\">:</span></span>\n<span class=\"line\"><span style=\"color:#85E89D\">  image</span><span style=\"color:#E1E4E8\">: </span><span style=\"color:#9ECBFF\">n8nio/n8n:latest</span></span>\n<span class=\"line\"><span style=\"color:#85E89D\">  ports</span><span style=\"color:#E1E4E8\">:</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">    - </span><span style=\"color:#9ECBFF\">\"5678:5678\"</span></span>\n<span class=\"line\"><span style=\"color:#85E89D\">  environment</span><span style=\"color:#E1E4E8\">:</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">    - </span><span style=\"color:#9ECBFF\">N8N_BASIC_AUTH_ACTIVE=true</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">    - </span><span style=\"color:#9ECBFF\">ENV=${N8N_WORKFLOW_ENV}</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">    - </span><span style=\"color:#9ECBFF\">BACKEND_BASE_URL=${N8N_BACKEND_BASE_URL}</span></span>\n<span class=\"line\"><span style=\"color:#85E89D\">  volumes</span><span style=\"color:#E1E4E8\">:</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">    - </span><span style=\"color:#9ECBFF\">n8n_data:/home/node/.n8n</span></span>\n<span class=\"line\"><span style=\"color:#85E89D\">  networks</span><span style=\"color:#E1E4E8\">:</span></span>\n<span class=\"line\"><span style=\"color:#E1E4E8\">    - </span><span style=\"color:#9ECBFF\">my_network</span></span></code></pre>\n<h3 id=\"acceso-público\">Acceso Público</h3>\n<pre class=\"astro-code github-dark\" style=\"background-color:#24292e;color:#e1e4e8; overflow-x: auto;\" tabindex=\"0\" data-language=\"plaintext\"><code><span class=\"line\"><span>https://n8n.aaronccenta.site</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>Cloudflare Tunnel</span></span>\n<span class=\"line\"><span>↓</span></span>\n<span class=\"line\"><span>n8n:5678 (Docker)</span></span></code></pre>\n<h2 id=\"resultados\">Resultados</h2>\n<ul>\n<li>✅ <strong>20+ workflows</strong> activos en producción</li>\n<li>✅ <strong>Miles de ejecuciones</strong> mensuales</li>\n<li>✅ <strong>99% success rate</strong> en automatizaciones</li>\n<li>✅ <strong>Ahorro de 10+ horas/semana</strong> en tareas manuales</li>\n<li>✅ <strong>Zero code deployments</strong> para nuevos workflows</li>\n<li>✅ <strong>Integración perfecta</strong> con backend NestJS</li>\n</ul>\n<h2 id=\"casos-de-uso\">Casos de Uso</h2>\n<ol>\n<li><strong>Envío masivo de evaluaciones</strong> programadas</li>\n<li><strong>Sincronización automática</strong> con CRM</li>\n<li><strong>Reportes personalizados</strong> para clientes</li>\n<li><strong>Backup automático</strong> de datos críticos</li>\n<li><strong>Monitoreo y alertas</strong> proactivas</li>\n<li><strong>Migración de datos</strong> entre sistemas</li>\n</ol>\n<p>Este sistema de automatización ha transformado operaciones manuales en procesos automáticos confiables, permitiendo al equipo enfocarse en tareas de alto valor.</p>",
+      "metadata": {
+        "headings": [
+          {
+            "depth": 2,
+            "slug": "sobre-el-proyecto",
+            "text": "Sobre el Proyecto"
+          },
+          {
+            "depth": 2,
+            "slug": "stack-tecnológico",
+            "text": "Stack Tecnológico"
+          },
+          {
+            "depth": 2,
+            "slug": "arquitectura",
+            "text": "Arquitectura"
+          },
+          {
+            "depth": 3,
+            "slug": "integración-con-backend",
+            "text": "Integración con Backend"
+          },
+          {
+            "depth": 3,
+            "slug": "workflows-principales",
+            "text": "Workflows Principales"
+          },
+          {
+            "depth": 2,
+            "slug": "nodos-más-utilizados",
+            "text": "Nodos Más Utilizados"
+          },
+          {
+            "depth": 3,
+            "slug": "http-request",
+            "text": "HTTP Request"
+          },
+          {
+            "depth": 3,
+            "slug": "mysql",
+            "text": "MySQL"
+          },
+          {
+            "depth": 3,
+            "slug": "email-postmark",
+            "text": "Email (Postmark)"
+          },
+          {
+            "depth": 3,
+            "slug": "webhook",
+            "text": "Webhook"
+          },
+          {
+            "depth": 2,
+            "slug": "variables-de-entorno",
+            "text": "Variables de Entorno"
+          },
+          {
+            "depth": 2,
+            "slug": "workflows-de-negocio",
+            "text": "Workflows de Negocio"
+          },
+          {
+            "depth": 3,
+            "slug": "onboarding-de-clientes",
+            "text": "Onboarding de Clientes"
+          },
+          {
+            "depth": 3,
+            "slug": "procesamiento-de-evaluaciones",
+            "text": "Procesamiento de Evaluaciones"
+          },
+          {
+            "depth": 3,
+            "slug": "monitoreo-de-sistema",
+            "text": "Monitoreo de Sistema"
+          },
+          {
+            "depth": 2,
+            "slug": "ventajas-de-n8n",
+            "text": "Ventajas de n8n"
+          },
+          {
+            "depth": 3,
+            "slug": "low-code-automation",
+            "text": "Low-Code Automation"
+          },
+          {
+            "depth": 3,
+            "slug": "flexibilidad",
+            "text": "Flexibilidad"
+          },
+          {
+            "depth": 3,
+            "slug": "observabilidad",
+            "text": "Observabilidad"
+          },
+          {
+            "depth": 2,
+            "slug": "seguridad",
+            "text": "Seguridad"
+          },
+          {
+            "depth": 2,
+            "slug": "despliegue",
+            "text": "Despliegue"
+          },
+          {
+            "depth": 3,
+            "slug": "docker-compose",
+            "text": "Docker Compose"
+          },
+          {
+            "depth": 3,
+            "slug": "acceso-público",
+            "text": "Acceso Público"
+          },
+          {
+            "depth": 2,
+            "slug": "resultados",
+            "text": "Resultados"
+          },
+          {
+            "depth": 2,
+            "slug": "casos-de-uso",
+            "text": "Casos de Uso"
+          }
+        ],
+        "localImagePaths": [],
+        "remoteImagePaths": [],
+        "frontmatter": {
+          "title": "n8n Workflow Automation",
+          "publishDate": "2023-02-10T00:00:00.000Z",
+          "img": "/assets/n8n-workflows.jpg",
+          "img_alt": "Panel de n8n mostrando workflows automatizados conectados al backend NestJS",
+          "description": "Automatización empresarial con n8n integrado al backend NestJS para procesamiento automático de evaluaciones y notificaciones.\n",
+          "tags": [
+            "n8n",
+            "Automation",
+            "Integration",
+            "Workflows"
+          ],
+          "featured": false,
+          "visible": true
+        },
+        "imagePaths": []
+      }
+    },
+    "collection": "work"
+  }
+]

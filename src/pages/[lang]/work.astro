@@ -26,9 +26,9 @@ const pageTitle = `${t('work.title')} | Aaron Ccenta`;
 const pageDescription = t('work.description');
 
 // Content Fetching: List all work projects
-const projects = (await getCollection('work')).sort(
-  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
-);
+const projects = (await getCollection('work'))
+  .filter((project) => project.data.visible !== false)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>

@@ -1,119 +1,62 @@
 ---
-title: Payment Gateway Integration
-publishDate: 2024-09-20 00:00:00
-img: /assets/backend-swagger.jpg
-img_alt: Documentación Swagger mostrando endpoints de API de pagos y gestión de créditos
+title: SmartPay Integration Service
+publishDate: 2025-12-01 00:00:00
+img: /assets/smartpay/payment-orchestration.png
+img_alt: Diagrama de arquitectura del servicio de orquestación de pagos conectando con Culqi y MercadoPago
 description: |
-  Sistema completo de procesamiento de pagos con Culqi y MercadoPago, gestión de créditos y facturación automática.
+  Microservicio backend especializado en el procesamiento de pagos, integrando pasarelas como Culqi y MercadoPago.
 tags:
   - NestJS
-  - Payments
-  - Backend
-  - Integration
+  - Culqi
+  - MercadoPago
+  - Swagger
+  - MikroORM
+featured: true
+visible: true
 ---
+
+> [!NOTE]
+> Servicio crítico en producción que procesa transacciones financieras en tiempo real.
 
 ## Sobre el Proyecto
 
-Sistema robusto de procesamiento de pagos integrado con las principales pasarelas de pago en Perú y Latinoamérica. Incluye gestión de créditos, facturación automática y webhooks para sincronización en tiempo real.
+**SmartPay** es el motor financiero del ecosistema Multitest. Es un backend especializado encargado de orquestar todas las transacciones de pago, garantizando seguridad, trazabilidad y conciliación.
+
+Actúa como una capa de abstracción unificada sobre múltiples pasarelas de pago, permitiendo a las aplicaciones cliente (como SmartLite) procesar cobros sin lidiar con la complejidad específica de cada proveedor.
 
 ## Stack Tecnológico
 
-- **NestJS** - Framework backend modular
-- **TypeScript** - Type safety y desarrollo robusto
-- **Culqi** - Pasarela de pagos Perú
-- **MercadoPago** - Pasarela de pagos LATAM
-- **MySQL** - Base de datos transaccional
-- **MikroORM** - ORM con soporte transaccional
-- **Webhooks** - Eventos en tiempo real
+### Backend (NestJS)
+- **Core**: NestJS con TypeScript para una arquitectura robusta y tipada.
+- **Base de Datos**: **MikroORM** con MySQL para persistencia transaccional.
+- **Documentación**: API documentada exhaustivamente con **Swagger/OpenAPI**.
+- **Logging**: Sistema de logs estructurados con Pino para auditoría financiera.
+- **Emailing**: Notificaciones transaccionales vía Postmark.
 
-## Arquitectura del Sistema
+## Integraciones Clave
 
-### Módulo Payments
-Estructura modular siguiendo principios SOLID:
-
-```typescript
-payments/
-├── entities/
-│   ├── payment.entity.ts
-│   └── transaction.entity.ts
-├── dto/
-│   ├── create-payment.dto.ts
-│   └── payment-response.dto.ts
-├── payments.controller.ts
-├── payments.service.ts
-└── payments.module.ts
-```
-
-### Módulo Credits
-Sistema de gestión de créditos para clientes B2B:
-
-```typescript
-credits/
-├── entities/
-│   ├── credit-package.entity.ts
-│   └── credit-usage.entity.ts
-├── credits.service.ts
-└── credits.module.ts
-```
+### Pasarelas de Pago
+- **Culqi**: Procesamiento de tarjetas de crédito/débito y Yape. Manejo de autenticación 3DS.
+- **MercadoPago**: Integración completa para cobros en Latinoamérica.
+- **Webhooks**: Sistema robusto para recibir y validar notificaciones asíncronas de pago.
 
 ## Características Principales
 
-### Integración Multi-Gateway
+- **Abstracción de Pagos**: API unificada para crear órdenes y procesar cargos independientemente del proveedor.
+- **Seguridad**: Manejo seguro de tokens y validación de firmas en webhooks.
+- **Trazabilidad**: Registro detallado de cada intento de transacción y respuesta de las pasarelas.
+- **Notificaciones**: Envío automático de comprobantes y alertas de pago a clientes y comercios.
+- **Soporte Multi-moneda**: Manejo de Soles (PEN) y Dólares (USD) con precisión decimal.
 
-**Culqi (Perú)**
-- Tarjetas de crédito/débito
-- Pagos recurrentes
-- 3D Secure
-- Webhooks de confirmación
-
-**MercadoPago (LATAM)**
-- Múltiples métodos de pago
-- Pagos en cuotas
-- QR payments
-- Marketplace support
-
-### Flujo de Pago
-
-1. **Creación de orden**
-   - Validación de datos del cliente
-   - Cálculo de montos y comisiones
-   - Generación de token de pago
-
-2. **Procesamiento**
-   - Envío a pasarela seleccionada
-   - Manejo de respuesta asíncrona
-   - Actualización de estado en tiempo real
-
-3. **Confirmación**
-   - Webhook de pasarela
-   - Validación de firma
-   - Acreditación de créditos
-   - Envío de factura por email
-
-4. **Gestión de Créditos**
-   - Acreditación automática post-pago
-   - Tracking de uso por servicio
-   - Alertas de saldo bajo
-   - Reportes de consumo
-
-### Seguridad
-
-- **Validación de Webhooks**: Firma criptográfica
-- **PCI Compliance**: No almacenamiento de datos sensibles
-- **Transacciones ACID**: Consistencia garantizada
-- **Logging exhaustivo**: Auditoría completa
-- **Rate limiting**: Protección contra abuso
-
-### Sistema de Créditos
-
-```typescript
-Paquetes configurables:
+## Infraestructura
+- **Docker**: Entorno contenerizado para desarrollo y producción.
+- **Testing**: Pruebas unitarias y E2E para garantizar la integridad financiera.
+- **CI/CD**: Pipelines automatizados para despliegue seguro.onfigurables:
 - Basic: 100 créditos
 - Professional: 500 créditos (+10% bonus)
 - Enterprise: 2000 créditos (+20% bonus)
 
 Uso:
-- 1 crédito = 1 evaluación psicométrica
 - Tracking en tiempo real
 - Expiración configurable
 - Renovación automática (opcional)

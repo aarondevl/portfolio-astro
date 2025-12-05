@@ -1,6 +1,6 @@
 ---
 title: Docker & Cloud Infrastructure
-publishDate: 2024-10-15 00:00:00
+publishDate: 2023-01-15 00:00:00
 img: /assets/docker-infrastructure.jpg
 img_alt: Infraestructura Docker mostrando contenedores y arquitectura de microservicios
 description: |
@@ -11,6 +11,8 @@ tags:
   - Cloudflare
   - AWS
   - Infrastructure
+featured: false
+visible: false
 ---
 
 ## Sobre el Proyecto

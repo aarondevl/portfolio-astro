@@ -1,6 +1,6 @@
 ---
 title: n8n Workflow Automation
-publishDate: 2024-08-10 00:00:00
+publishDate: 2023-02-10 00:00:00
 img: /assets/n8n-workflows.jpg
 img_alt: Panel de n8n mostrando workflows automatizados conectados al backend NestJS
 description: |
@@ -10,6 +10,8 @@ tags:
   - Automation
   - Integration
   - Workflows
+featured: false
+visible: false
 ---
 
 ## Sobre el Proyecto
