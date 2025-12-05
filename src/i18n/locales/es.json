@@ -10,7 +10,7 @@
   },
   "hero": {
     "greeting": "Hola, mi nombre es Aaron Ccenta",
-    "tagline": "Desarrollador Full Stack con 5+ años de experiencia, especializado en NestJS, Docker, Cloud Infrastructure y sistemas de evaluación psicométrica, basado en Perú.",
+    "tagline": "Desarrollador Full Stack con 5+ años de experiencia, especializado en NestJS, Docker, Cloud Infrastructure y sistemas de evaluación psicométrica, de Lima, Perú.",
     "role": {
       "fullstack": "Full Stack",
       "node": "NestJS & Node.js",
@@ -91,7 +91,17 @@
           "title": "Analista de Software",
           "company": "Multitest Resources S.A.C.",
           "period": "Octubre 2022 - Presente (3 años)",
-          "tags": ["NestJS", "Angular", "Docker", "AWS", "MySQL", "Payments", "B2B Integration", "Migration", "Architecture"],
+          "tags": [
+            "NestJS",
+            "Angular",
+            "Docker",
+            "AWS",
+            "MySQL",
+            "Payments",
+            "B2B Integration",
+            "Migration",
+            "Architecture"
+          ],
           "responsibilities": [
             "Mantuve sistemas legacy con CodeIgniter 3: Smartevaluation (gestión de candidatos y procesos de selección), Opportunities (plataforma para pruebas psicométricas), Admin (gestión de clientes) y Apps (acceso al ecosistema).",
             "Desarrollé desde cero Smartlite (smartlite.multitestresources.com): sistema ligero réplica del principal con modelo pay-per-use y pagos directos por candidato evaluado.",
@@ -112,7 +122,19 @@
           "title": "Programming Analyst",
           "company": "Visual Impact S.A.C.",
           "period": "Febrero 2020 - Septiembre 2022 (2 años 8 meses)",
-          "tags": ["CodeIgniter", "PHP", "Angular", "NestJS", "Git", "SQL Optimization", "Leadership", "ISO 27001", "Migration", "Reporting", "Trade Marketing"],
+          "tags": [
+            "CodeIgniter",
+            "PHP",
+            "Angular",
+            "NestJS",
+            "Git",
+            "SQL Optimization",
+            "Leadership",
+            "ISO 27001",
+            "Migration",
+            "Reporting",
+            "Trade Marketing"
+          ],
           "responsibilities": [
             "Trabajé en el área de Sistemas de empresa dedicada a Trade Marketing, gestionando sistemas operacionales para rutas, GTM y logística.",
             "Desarrollé reportes web dinámicos para análisis de rutas de distribución, gestión de GTM (Going-to-Market) y métricas operacionales del negocio de Trade Marketing.",
@@ -132,7 +154,14 @@
           "title": "Desarrollador Full Stack (Freelance)",
           "company": "Turno - Sistema de Gestión de Pedidos",
           "period": "Mayo 2022 - Agosto 2022 (4 meses)",
-          "tags": ["Freelance", "CodeIgniter", "Order Management", "PHP", "MySQL", "Backend"],
+          "tags": [
+            "Freelance",
+            "CodeIgniter",
+            "Order Management",
+            "PHP",
+            "MySQL",
+            "Backend"
+          ],
           "responsibilities": [
             "Proyecto freelance paralelo a mi trabajo principal en Visual Impact, trabajando en Turno.macctec.",
             "Desarrollé módulos completos para gestión de pedidos: creación, edición, estados y workflow de aprobación.",
@@ -163,4 +192,4 @@
       "backHome": "Volver al inicio"
     }
   }
-} 
+}
