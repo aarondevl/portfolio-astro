@@ -1,4 +1,3 @@
-```
 ---
 title: Teamtailor ATS Integration
 publishDate: 2023-06-15 00:00:00
