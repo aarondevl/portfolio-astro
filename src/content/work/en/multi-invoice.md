@@ -34,19 +34,19 @@ This project consisted of developing a microservice responsible for the massive 
 ## Technology Stack
 
 ### Backend (NestJS)
-- **Integración**: Cliente HTTP resiliente para comunicación con API de Nubefact.
-- **Documentación**: API documentada con **Swagger/OpenAPI**.
-- **Internacionalización**: Soporte multi-idioma (ES, EN, PT) con `nestjs-i18n`.
+- **Integration**: Resilient HTTP client for communication with Nubefact API.
+- **Documentation**: API documented with **Swagger/OpenAPI**.
+- **Internationalization**: Multi-language support (ES, EN, PT) with `nestjs-i18n`.
 
-## Características Principales
+## Key Features
 
-- **Emisión Automatizada**: Generación de Boletas y Facturas en tiempo real tras el pago.
-- **Integración Nubefact**: Conexión directa con el proveedor de servicios electrónicos (PSE).
-- **Cumplimiento SUNAT**: Validación de reglas de negocio y formatos requeridos por la autoridad tributaria.
-- **Gestión de Correlativos**: Control automático de series y números de comprobantes.
-- **Notificaciones**: Envío automático de comprobantes (PDF/XML) al cliente vía correo electrónico.
+- **Automated Issuance**: Real-time generation of Receipts and Invoices after payment.
+- **Nubefact Integration**: Direct connection with the electronic service provider (PSE).
+- **SUNAT Compliance**: Validation of business rules and formats required by the tax authority.
+- **Sequential Management**: Automatic control of series and document numbers.
+- **Notifications**: Automatic sending of documents (PDF/XML) to customers via email.
 
-## Infraestructura
-- **Docker**: Entorno contenerizado para despliegue consistente.
-- **Logging**: Sistema de trazas con Pino para auditoría de emisiones.
-- **Seguridad**: Autenticación JWT para proteger los endpoints de emisión.
+## Infrastructure
+- **Docker**: Containerized environment for consistent deployment.
+- **Logging**: Trace system with Pino for issuance auditing.
+- **Security**: JWT authentication to protect issuance endpoints.

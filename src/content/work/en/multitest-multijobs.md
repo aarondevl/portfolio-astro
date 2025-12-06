@@ -28,39 +28,39 @@ The system stands out for its robust architecture that supports multiple applica
 ## Tech Stack
 
 ### Backend (NestJS)
-- **Seguridad**: Autenticación JWT dual (Candidatos y Empresas) con Passport strategies.
-- **Documentación**: API completamente documentada con Swagger/OpenAPI.
-- **Validación**: Pipelines de validación robustos con `class-validator`.
-- **Patrones**: Uso de DTOs, Serializers y el patrón Repository para un código limpio y mantenible.
+- **Security**: Dual JWT authentication (Candidates and Companies) with Passport strategies.
+- **Documentation**: Fully documented API with Swagger/OpenAPI.
+- **Validation**: Robust validation pipelines with `class-validator`.
+- **Patterns**: Use of DTOs, Serializers, and Repository pattern for clean and maintainable code.
 
 ### Frontend (Angular 20)
-Monorepo moderno utilizando las últimas características de **Angular 20**.
-- **Arquitectura**: Workspace multi-aplicación (`company-app` y `candidate-app`).
-- **Estado**: Gestión de estado reactiva utilizando **Angular Signals**.
-- **UI/UX**: Diseño responsive con **Tailwind CSS** y componentes Flowbite.
-- **Seguridad**: Guards de autenticación y verificación de dos pasos (2FA).
-- **Integración**: Cliente API auto-generado desde especificación OpenAPI.
+Modern monorepo using the latest **Angular 20** features.
+- **Architecture**: Multi-application workspace (`company-app` and `candidate-app`).
+- **State**: Reactive state management using **Angular Signals**.
+- **UI/UX**: Responsive design with **Tailwind CSS** and Flowbite components.
+- **Security**: Authentication guards and two-step verification (2FA).
+- **Integration**: Auto-generated API client from OpenAPI specification.
 
-## Características Principales
+## Key Features
 
-### Para Empresas
-- **Gestión de Vacantes**: Creación y edición completa de ofertas de trabajo con requisitos detallados.
-- **Pipeline de Talento**: Visualización y gestión de candidatos en diferentes etapas del proceso.
-- **Perfiles de Empresa**: Administración de información corporativa y gestión de usuarios del equipo.
-- **Roles y Permisos**: Sistema granular de control de acceso para diferentes niveles de usuarios corporativos.
+### For Companies
+- **Vacancy Management**: Complete creation and editing of job postings with detailed requirements.
+- **Talent Pipeline**: Visualization and management of candidates at different process stages.
+- **Company Profiles**: Corporate information management and team user administration.
+- **Roles and Permissions**: Granular access control system for different corporate user levels.
 
-### Para Candidatos
-- **CV Wizard**: Constructor de currículum interactivo y exportable.
-- **Multimedia**: Carga de CVs, fotos de perfil y videos de presentación almacenados en **AWS S3**.
-- **Búsqueda Inteligente**: Filtrado avanzado de ofertas por ubicación, área y modalidad.
-- **Seguridad Avanzada**: Autenticación de dos factores (2FA) para proteger la cuenta.
+### For Candidates
+- **CV Wizard**: Interactive and exportable resume builder.
+- **Multimedia**: Upload CVs, profile photos, and presentation videos stored in **AWS S3**.
+- **Smart Search**: Advanced job filtering by location, area, and modality.
+- **Advanced Security**: Two-factor authentication (2FA) to protect accounts.
 
-## Infraestructura y DevOps
-- **Cloud Storage**: Integración con **AWS S3** para gestión segura y escalable de archivos multimedia (imágenes, documentos, videos).
-- **IaC (Infraestructura como Código)**: Despliegue automatizado utilizando **Pulumi**.
-- **Despliegue**: Arquitectura serverless y contenerizada usando **AWS App Runner** (Backend) y **AWS Amplify** (Frontend).
-- **Docker**: Contenerización completa para desarrollo y despliegue consistente.
-- **Calidad de Software**:
-    - **Unit Testing**: Pruebas exhaustivas con Karma/Jasmine.
-    - **E2E Testing**: Flujos críticos validados con Cypress.
-    - **CI/CD**: Pipelines automatizados para construcción y verificación.
+## Infrastructure and DevOps
+- **Cloud Storage**: Integration with **AWS S3** for secure and scalable multimedia file management (images, documents, videos).
+- **IaC (Infrastructure as Code)**: Automated deployment using **Pulumi**.
+- **Deployment**: Serverless and containerized architecture using **AWS App Runner** (Backend) and **AWS Amplify** (Frontend).
+- **Docker**: Complete containerization for consistent development and deployment.
+- **Software Quality**:
+    - **Unit Testing**: Comprehensive tests with Karma/Jasmine.
+    - **E2E Testing**: Critical flows validated with Cypress.
+    - **CI/CD**: Automated pipelines for build and verification.

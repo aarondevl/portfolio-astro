@@ -1,4 +1,4 @@
----
+--- 
 title: SmartLite
 publishDate: 2020-03-04 00:00:00
 img: /assets/stock-4.jpg
@@ -14,33 +14,33 @@ visible: true
 ---
 
 
-## Stack Tecnológico
+## Technology Stack
 
 ### Backend (NestJS)
-- **Arquitectura**: Modular con dominios separados (Auth, Users, Processes, Psychometric Test, Payments).
-- **Base de Datos**: **MikroORM** con MySQL, soportando múltiples esquemas y conexiones por ambiente.
-- **Autenticación**: JWT con Passport Strategy y Guards personalizados.
-- **Pagos**: Integración con MercadoPago y sistema de créditos interno.
-- **Emailing**: Servicio de correos transaccionales con **Postmark**.
-- **Calidad**: Testing unitario y E2E, con pipelines de CI/CD en Jenkins.
+- **Architecture**: Modular with separate domains (Auth, Users, Processes, Psychometric Test, Payments).
+- **Database**: **MikroORM** with MySQL, supporting multiple schemas and connections per environment.
+- **Authentication**: JWT with Passport Strategy and custom Guards.
+- **Payments**: Integration with MercadoPago and internal credit system.
+- **Emailing**: Transactional email service with **Postmark**.
+- **Quality**: Unit and E2E testing, with CI/CD pipelines in Jenkins.
 
 ### Frontend (Angular 17)
-- **Framework**: Angular 17 utilizando **Signals** para gestión de estado reactiva.
-- **Estilos**: Diseño moderno y responsive con **Tailwind CSS**.
-- **Arquitectura**: Componentes reutilizables y servicios optimizados.
+- **Framework**: Angular 17 using **Signals** for reactive state management.
+- **Styling**: Modern and responsive design with **Tailwind CSS**.
+- **Architecture**: Reusable components and optimized services.
 
-## Características Principales
+## Key Features
 
-- **Gestión de Evaluaciones**: Administración completa de baterías de pruebas psicométricas.
-- **Procesos de Selección**: Flujos de trabajo configurables para diferentes tipos de convocatorias.
-- **Sistema de Créditos y Pagos**: Manejo de saldo y transacciones para el uso de la plataforma.
-- **Multi-ambiente**: Configuración dinámica para entornos Local, Desarrollo y Producción.
-- **Internacionalización**: Soporte multi-idioma (i18n) en backend y frontend.
+- **Assessment Management**: Complete administration of psychometric test batteries.
+- **Selection Processes**: Configurable workflows for different types of job postings.
+- **Credits and Payment System**: Balance and transaction management for platform usage.
+- **Multi-environment**: Dynamic configuration for Local, Development, and Production environments.
+- **Internationalization**: Multi-language support (i18n) in backend and frontend.
 
-## Infraestructura
-- **Backend Cloud**: Despliegue serverless escalable en **AWS App Runner**.
-- **Frontend Cloud**: Hosting y CI/CD automatizado con **AWS Amplify**.
-- **Docker**: Despliegue contenerizado para consistencia entre entornos.
-- **Testing**: Pruebas unitarias y E2E integradas en el ciclo de desarrollo.
-- **CI/CD**: Pipelines automatizados para construcción, pruebas y despliegue continuo.
-- **Monitoreo**: Logging estructurado con Pino y chequeos de salud (Health Checks).
+## Infrastructure
+- **Backend Cloud**: Scalable serverless deployment on **AWS App Runner**.
+- **Frontend Cloud**: Automated hosting and CI/CD with **AWS Amplify**.
+- **Docker**: Containerized deployment for consistency across environments.
+- **Testing**: Unit and E2E tests integrated into the development cycle.
+- **CI/CD**: Automated pipelines for build, testing, and continuous deployment.
+- **Monitoring**: Structured logging with Pino and Health Checks.

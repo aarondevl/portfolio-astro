@@ -42,93 +42,95 @@ This service acts as an abstraction layer for payment processing, allowing the p
 
 > This service provides flexibility to switch or add payment providers without affecting the rest of the application.
 
-## Infraestructura
-- **Docker**: Entorno contenerizado para desarrollo y producción.
-- **Testing**: Pruebas unitarias y E2E para garantizar la integridad financiera.
-- **CI/CD**: Pipelines automatizados para despliegue seguro.onfigurables:
-- Basic: 100 créditos
-- Professional: 500 créditos (+10% bonus)
-- Enterprise: 2000 créditos (+20% bonus)
+## Infrastructure
+- **Docker**: Containerized environment for development and production.
+- **Testing**: Unit and E2E tests to ensure financial integrity.
+- **CI/CD**: Automated pipelines for secure deployment.
 
-Uso:
-- Tracking en tiempo real
-- Expiración configurable
-- Renovación automática (opcional)
+### Configurable Plans:
+- Basic: 100 credits
+- Professional: 500 credits (+10% bonus)
+- Enterprise: 2000 credits (+20% bonus)
+
+Usage:
+- Real-time tracking
+- Configurable expiration
+- Automatic renewal (optional)
 ```
 
-## Integración con Otros Módulos
+## Integration with Other Modules
 
 ### Mailing (Postmark)
-- Confirmación de pago
-- Factura electrónica
-- Alertas de saldo
+- Payment confirmation
+- Electronic invoice
+- Balance alerts
 
 ### Notifications
-- Notificaciones push
-- Alertas en dashboard
-- Reportes periódicos
+- Push notifications
+- Dashboard alerts
+- Periodic reports
 
 ### Users
-- Historial de pagos
-- Preferencias de facturación
-- Métodos de pago guardados
+- Payment history
+- Billing preferences
+- Saved payment methods
 
-## Manejo de Errores
+## Error Handling
 
-Implementación robusta de error handling:
+Robust error handling implementation:
 
 ```typescript
-- Pagos rechazados
-- Timeouts de pasarela
-- Webhooks duplicados
-- Errores de red
-- Validación de datos
+- Rejected payments
+- Gateway timeouts
+- Duplicate webhooks
+- Network errors
+- Data validation
 ```
 
-Retry automático con backoff exponencial para fallos transitorios.
+Automatic retry with exponential backoff for transient failures.
 
-## Monitoreo y Reporting
+## Monitoring and Reporting
 
-### Métricas Tracked
-- Tasa de éxito de pagos
-- Tiempo promedio de procesamiento
-- Monto total procesado
-- Conversión por pasarela
-- Errores y rechazos
+### Tracked Metrics
+- Payment success rate
+- Average processing time
+- Total amount processed
+- Conversion by gateway
+- Errors and rejections
 
 ### Dashboards
-- Panel de administración
-- Reportes por período
-- Análisis por pasarela
-- Tracking de créditos
-- Alertas automáticas
+- Administration panel
+- Period reports
+- Gateway analysis
+- Credit tracking
+- Automatic alerts
 
 ## Testing
 
-Suite completa de tests:
+Complete test suite:
 
 ```typescript
-- Unit tests para servicios
-- Integration tests para pasarelas (sandbox)
-- E2E tests para flujos completos
-- Mock de webhooks
-- Test de rollback transaccional
+- Unit tests for services
+- Integration tests for gateways (sandbox)
+- E2E tests for complete flows
+- Webhook mocking
+- Transactional rollback tests
 ```
 
-## Resultados
+## Results
 
-- ✅ **Miles de transacciones** procesadas mensualmente
-- ✅ **99.9% success rate** en procesamiento
-- ✅ **<3s** tiempo promedio de respuesta
-- ✅ **Zero data loss** con transacciones ACID
-- ✅ **Facturación automática** 100% confiable
+- ✅ **Thousands of transactions** processed monthly
+- ✅ **99.9% success rate** in processing
+- ✅ **<3s** average response time
+- ✅ **Zero data loss** with ACID transactions
+- ✅ **Automatic invoicing** 100% reliable
 - ✅ **Multi-currency** support (PEN, USD)
 
-## Desafíos Superados
+## Challenges Overcome
 
-1. **Reconciliación de pagos**: Sistema automático de matching entre webhooks y órdenes
-2. **Idempotencia**: Prevención de cargos duplicados
-3. **Failover**: Cambio automático de pasarela en caso de falla
-4. **Compliance**: Cumplimiento de regulaciones PCI-DSS
+1. **Payment Reconciliation**: Automatic matching system between webhooks and orders
+2. **Idempotency**: Prevention of duplicate charges
+3. **Failover**: Automatic gateway switching in case of failure
+4. **Compliance**: PCI-DSS regulation compliance
 
-Este módulo es crítico para el negocio, procesando el 100% de los ingresos de la plataforma con alta confiabilidad y seguridad.
+This module is critical to the business, processing 100% of the platform's revenue with high reliability and security.

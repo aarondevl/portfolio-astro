@@ -16,13 +16,13 @@ visible: true
 
 > [!NOTE]
 
-## Características Principales
+## Key Features
 
-- **Sincronización Bidireccional**: Mantiene los datos de los candidatos actualizados en ambas plataformas.
-- **Visualización de Reportes**: Permite a los reclutadores ver los resultados de las evaluaciones psicométricas de Multitest directamente dentro de la interfaz de Teamtailor.
-- **Automatización de Flujos**: Elimina la entrada manual de datos, reduciendo errores y ahorrando tiempo al equipo de RRHH.
-- **Procesamiento de Eventos**: Análisis inteligente de payloads JSON para determinar la acción correcta a ejecutar.
+- **Bidirectional Synchronization**: Keeps candidate data updated across both platforms.
+- **Report Visualization**: Allows recruiters to view Multitest psychometric assessment results directly within the Teamtailor interface.
+- **Workflow Automation**: Eliminates manual data entry, reducing errors and saving time for the HR team.
+- **Event Processing**: Intelligent analysis of JSON payloads to determine the correct action to execute.
 
-## Impacto
+## Impact
 
-Esta integración permitió a los clientes de Multitest utilizar su ATS preferido sin perder la potencia de las evaluaciones psicométricas especializadas, creando una experiencia de usuario fluida y unificada.
+This integration enabled Multitest clients to use their preferred ATS without losing the power of specialized psychometric assessments, creating a seamless and unified user experience.
