@@ -2,9 +2,9 @@
 title: SmartPay Integration Service
 publishDate: 2025-12-01 00:00:00
 img: /assets/smartpay/payment-orchestration.png
-img_alt: Diagrama de arquitectura del servicio de orquestación de pagos conectando con Culqi y MercadoPago
+img_alt: Architecture diagram of payment orchestration service connecting Culqi and MercadoPago
 description: |
-  Microservicio backend especializado en el procesamiento de pagos, integrando pasarelas como Culqi y MercadoPago.
+  Backend microservice specialized in payment processing, integrating gateways like Culqi and MercadoPago.
 tags:
   - NestJS
   - Culqi
@@ -16,15 +16,15 @@ visible: true
 ---
 
 > [!NOTE]
-> Servicio crítico en producción que procesa transacciones financieras en tiempo real.
-
-## Sobre el Proyecto
-
-**SmartPay** es el motor financiero del ecosistema Multitest. Es un backend especializado encargado de orquestar todas las transacciones de pago, garantizando seguridad, trazabilidad y conciliación.
-
-Actúa como una capa de abstracción unificada sobre múltiples pasarelas de pago, permitiendo a las aplicaciones cliente (como SmartLite) procesar cobros sin lidiar con la complejidad específica de cada proveedor.
+> Critical production service processing financial transactions in real-time.
 
 ## About the Project
+
+**SmartPay** is the financial engine of the Multitest ecosystem. It is a specialized backend responsible for orchestrating all payment transactions, ensuring security, traceability, and reconciliation.
+
+It acts as a unified abstraction layer over multiple payment gateways, allowing client applications (like SmartLite) to process payments without dealing with the specific complexity of each provider.
+
+## Technical Details
 
 This service acts as an abstraction layer for payment processing, allowing the platform to interact with multiple payment gateways through a single unified interface.
 
